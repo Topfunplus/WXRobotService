@@ -1,0 +1,1730 @@
+INFO:     Will watch for changes in these directories: ['/apps/robotWechat']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1717] using statreload
+INFO:     Started server process [1722]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[bhA9m8X2eQCgmH1a2OhIkWtG6+AFmKVa+rLoGZK8QMRZENl+wKSSaIOAUEuufmfELJDiAhbf4D5PYU7tWXmiNJzjBKClVW7CQufjVo7YvYFPXe4uuvH1N2frkbcxTUL5rFGuNpHR3f3Ib4cIT4LnwzUxtGS6KSl7RRdHWrx0yBO6Bw2VbJoXn1DPvhj/AZdl7r0TEaE9Ufw8tmIwtckMwNeH5LHQa+u1eN7OBMcfYu1fwvYgigRbJdZBZZo1jqmTIqVycijJWqMKuSrCp+tzjNSAZDI7RJHjlR6I2hzdabyR9/E+3uCq6GKHOEl2rz1J2PPNBPZ7uy4DJMFDhCiqcOUqpNxOSqE9uXZIGABrzKo0TpyyYzvXzw4gkkVik16NuRUxzuVbBXekbudluBZLvsqSLh3S962X5xMNNwr7BVdEEOUDhkLU9GjOmAYUi3V9ZlqGspU1m8IdXAMPrvHLVOjEBqjxott0MWMp1Sw+ypEZjGOTxZSd7n0TRh9+DB3l]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Rh3
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9RvH 
+
+数据插入成功。
+抓取结果 [{'msgid': '4WmUnL4sRkeyXuUXEVjVLe8Xp3sr9J3Wygq98RDjiQqN', 'send_time': 1743506245, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAamJwVAVUaMryUX-my0kwmQ', 'welcome_code': 'nty3jjYQKzYkxudfSPGLkMKS6091T-5z3LiIrL3vgjs'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:39914 - "POST /?msg_signature=b86eb063b30dbc0090737000c6dade088fc4df69&timestamp=1743506245&nonce=1743088447 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[39PyGCgMvpZXhKf8L9BnfYM38XVjgEHsn2jUSwOIuzLj5q5PW3/qf2buA6bScjLuxAJHFFU7y/bg9m7EMVFZAjREd3cLX2VhSMGKVfZxoZn8/dDJgDi46evHrCexNzDPiaj4LnPL789N/fJJhtONC32HeGKS9SsSF0h6JT3W1KRp9R04sTwZDtDQ2nYYHnu799UJSNhrWbZZIpM7Z0peGmLZ68wnTs2btX3PTwur3FJSQNv1BW4oLY1l85CftSBVtAoSfQAluFSIyHUwQgzf4SqPiLgmKtjHhBek+pIVy9t2dKhHVOmI2TL9S9wU4UI6nlqx0L6TlelR8z9lukCQ3g+rVvUud5NrYTIscsifu4STXozrJRjGGmeORiX8CamMlx/FwK1fzsMQZp4FIVR2FANUGbG7EN7Pu6AzLEoUv+jHDjjt78bdvjptcFV+EHBwHZHwLIvb8CgpJXPnnuULlpwsOZrLxpBqJwNDX9EZ7QgYx5F3Du7BjWsS9LLo/j3V]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9RvH
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Rzh 
+
+数据插入成功。
+抓取结果 [{'msgid': 'A1VeKV74J2r7qqFaoRMUiY7N5T', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'send_time': 1743506247, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'A1VeKV74J2r7qqFaoRMUiY7N5T'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:39924 - "POST /?msg_signature=cba520548da82552cc150d64948947ca5683f76f&timestamp=1743506247&nonce=1743645031 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好！😊 很高兴见到你！有什么我可以帮你的吗？
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '你好！😊 很高兴见到你！有什么我可以帮你的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'bf8697918fd1282f5705ab28f5caf545'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[1iXe++h9AWURYa5/wyBlnbrRJ4+pc92vSGtpHgTr9nbk620y/iOmFRiq6dWn2W+ZKyh+GhETEcTmA86WzLypQAQILw2rTmimAuPJiG1/n4uc9zYoX+WfjkTruzDMeWXvVU6EVF9at+6mE+ncQiKiGRkOLf7I3YqPV5X7sWMsBJka62+F9rq7ipmx9tnZTlZaUrdXkwZJTugviEX5Yke7OnvYxAa+4x6msYVTcbIrul3RNCQVLPFnaTPCIQRrO6YJgeEZ7IRGSk2a33bvZ4x4qYu0l+FrXt276wvlJ0ekULW1UWI12YKPbjN29eE1rPG0v7hVgmnex5zA0Sh19pAb8pwYVidAbf6KvYfLvk6S9GmydDGLDJbgt0cHxF2/UT2uqy3aHs775LhFpsXHr1RBSiBRyIFmu65YFNd6yrWRaaA99/sSiY8FHYhIUg1/O2jcnlFnuyz355uLQugM38XjywUJ7lO/RmuU4OthiuPXnhiq24pEOmUYksN2R+NjhHmG]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Rzh
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9SDw 
+
+数据插入成功。
+抓取结果 [{'msgid': '4ecxXWf5AQgZpQDKNUvQfc8KBKpMB7DuSRx4CrKyDC7U', 'send_time': 1743507506, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': 'ywzzPqob5nRLKugEICJYSlvf7U2Ngyb-j7vmpxes9gA'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41156 - "POST /?msg_signature=7a1e8854c97c146d01163c99ae0b4eec3ff1cf82&timestamp=1743507506&nonce=1743601756 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[iBfjXx4z+haTtpVv7LzoA5u6k7Gg8WlqRA8AnX7P/pTc6Y4jEgSV1T/HwV5xd6fi5Jb7prLKnXRYuexH2BmcPmd8FOiwXKt5ZJxUekSN10qi5/7SfOVops/rKuuFN2sPB3Bqz1Y7UsO6bgLdAspV3sLXGT3OPHdWfhMOaMNXD76mZ2l7XjsMJHVetWppXpqalEJWUtdQTzZ6KTMydkoh3zQcwtXQgW9lhYEwvfK21YXJnYtmWzVsBcSPZ3+G5xzn5ow2ZYDlREPDhebqW5ddx0NPbi+d0rY2CzAx04zTBVT33WGbykAAFN6NpHlXu78I0FvWEB0YG1Bx3NWh2bS59AlRRICHGFkM6CyKF4Nait2SzhrZBmJoE9ws4KnDKfJdUolsMDdquF1Y3ecSTEM/7sEwYxFw0RnheqR5naRUNq3TXuAfCwwEn4hLCkw8PZL8Dx5NGy3m8gQVwiv2PrEhulpr3DJ3Q63Ym0ySQSVbxLiexcQLp07ONLPPlDMIVn+i]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9SDw
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9SJM 
+
+数据插入成功。
+抓取结果 [{'msgid': '3Nemj9gM7UJdBe8H3jQBxzwhw', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'send_time': 1743507511, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '3Nemj9gM7UJdBe8H3jQBxzwhw'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:41170 - "POST /?msg_signature=bf3abd0c1e8c5476de981a6593ac984f01cce5d4&timestamp=1743507511&nonce=1743260337 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好呀！😊 很高兴和你聊天～有什么我可以帮你的吗？
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '你好呀！😊 很高兴和你聊天～有什么我可以帮你的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '7b56b0d249d6a6363b127a17f09334e7'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[/Nbdv9udT1jZQb+CK12cXjeYYUUx5d5pibIFdQx4hmyBoFN5V1y5K+Wl3By1ZGb7tkDZyG+EbJDHoqfdEWN1lMBeFT6zXJJVP7Y/WIU3TewFAPPGEUzc7kYcoeBvU18Ro/wVmcsTbPicC6OnzdcglWEBk6Q4k+F94fK15pqOLKfSVmlEMLRS3i5SL3qg+qyPcIlkW3SxankKKorWw3FeUAIWoN/a2pr/D3YEnF6//uZlXQEuaCxGYfLp+QMSPtTEbH+XfrfyvE95MK4yo+turlYghw7VlFrQ9xrHSLxr9SxvcAle+RHqy+v4v3gtc3gH1AjVkkJE+ehocbqalQAhPKfqzHpPwOHI+9Tg3TpiC/qwdYQ/hS5R3AKQyI+v7BsUoT4yn/A2v5tXKq4ynDa+zmwB/oj9lbhJTt5rza9hYlf1q0LH4o+HYSrnT1btCJQsy9gl0pHC0j6bdE7ltF/awXZH7KqCqqUAr8n9IKMVd2Hm/OROpm9uX0fqeV4zT46k]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9SJM
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9SXb 
+
+数据插入成功。
+抓取结果 [{'msgid': '4FtKkV5gnZNcGDtn5TobhAe6RBD8n7QmGqibYvFac5bQ', 'send_time': 1743508299, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAep6P2kZz37HaAnNF0iE2jA', 'welcome_code': 'qhUmHUmIldLmAWcHnWCqnj1MYhC4191G74posNoipPo'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41942 - "POST /?msg_signature=1d8c79e116d0dc7faf339ef60298aca8d2b8a42c&timestamp=1743508299&nonce=1743681319 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ZvIyTa3qAXkIcABfuuX94eKaippBPRWdCIEY5LbKNtq2mQt/A6hKb+SzhzdHp6/XYY/EDRQRNPg19eWcM0nahhQpXvWOoMVUJ+P2HbLCKc4915ztV8KaTLujokeVjF6UtlGCzqMK/wKcWsOZr9ezejjlSkuykQfI8JIFcxhC6p3IeshItCqCo0Oe2CHIfTnUv3pfICtIFVWbA6PsVgXwrNaMlKiXlniiqmOmxUBdpF55nqd8KIva4sx2Uf1cxNff/tH5Fb3OAmUpr92Eadz2GO0KqDgTnRuXg8FOR50trPkfOMvIFEx89aNmF04+lYuhMAj1DbNm3sIyNFbMvOwNgKl8b3ZEFyPkpIRSVeZZBMzhMVm91PhQ5t1IGI28teOlgj4qSrrtfOcEF06EWBkaNBOdUM1G8hAJivFUeBc8Le2mksSt/ZAWNRkw7IczQfQeibKv6Ia1wUo9suPANcxfdOguWTvQC9p6iFJbmvJsPlBuNAFlixsa7v6hWehgXtQt]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9SXb
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Sc1 
+
+数据插入成功。
+抓取结果 [{'msgid': '7ZBA7eVNS29KBSJfdTknLraAJEQUU22XzidvNUUyaB1r', 'send_time': 1743508495, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAmUihx_8geFKAXujWK7JL-w', 'welcome_code': 'eYpwLzMrlDkmYUK0XeeGxrXIEkLRDvRu6-NA3gFdvJc'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:42136 - "POST /?msg_signature=e15ab3611a8a9b1edd2cbbd23675ffcb969123cc&timestamp=1743508495&nonce=1743617749 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[mOwx1hLzhZoCQkpbP7q2bL5B+g+/spTPS+vmKCEU2Zi0Yjqmo1yyNBAxTY9Mkyxv1HgkL+DVPbAifBlKdLfIijOgXaiQdjcQo744YOc8Ir+2vuRbHKQOUnqodHSNI7LQSJKM+n/rTx021aSMrlFIHtTqMKBQbZZxjQlsgQ/vW8cgU0BuCyODfOjfYvyw+g9HSVj96FoTH3SD5J/48mDMm+xnz3TK1lsGDoG1VST7KECfF+DPFJdAbRPTY5xVTnT2jvJeWEs6EUWrEu29nFnRq2EoBXBe16XMYOa9lOW2qgzvM4AiHOdwpy0lfHOXjzz3k6FBPkL06LBfZtJiqBOZFHAgFsmKRpz4KOhXTfLlVMC3V0rr614rtTZBGZmfArWb2nr/4HDvVWi6Ydc+Mp3BtTakuJ9fusdPMo0/0hbLAmXEHx60DZFQOrMMnK7k+4N1mQfp4XdU45ROjFoFLxnCAFMi8C/6O0rUEHtl1JsvFzXbmGZPqYndRTRGUkUnt5so]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Sc1
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9SgR 
+
+数据插入成功。
+抓取结果 [{'msgid': '4ia1rf3Q7VHqdSXxznbtPQFXmqS9p9hSRVu9mMnjDfnx', 'send_time': 1743508753, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAZrZQ-SOZtNV-0rzyL0L1OA', 'welcome_code': '0-z2p1MLcVLJEFWdCnys8kVI11TJkwopR76Q-qtqrZo'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:42402 - "POST /?msg_signature=d6817236e0e5827f44e3745ed2906c61eb0f35a6&timestamp=1743508753&nonce=1742845795 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[M6KEIGWK8IFxbtZhqgALoi9zaZSLu0EiMVWxnOQeX2JI2owPiruB2YzhNYMrasWngvVSiThd7k5zmxEsWZfBvkItU2JGHecSGUlnUkzEESXjunw9dy8LEHFWjk0/j1LnMgLftdcp2UqLuXRFPhCJdI5/eCREaaN/K3aCbHn6oplfKutcsA0N+W6GqddsANOXyATfYexV8lVYEOeYIOMSXLRqEbb+ANx9uYrbIB5xToLDvByLUl5P/bWeNDB5tpxwKpQeVorDhdsRccsCo+NKWhyUzglW1+8e8mTNnJ5KoFfg6jU00KxckQN4dttZS4LxA/5VMoaZECecq6GMQ8XYeubtSD0Z6m3QxddhUV4l+VeXu8PBcOq/peOrivaQkf88G3B2/sGv3sIrXOrjL4gT6s4N3/XtFWOrzY8QyO2xiwuzasxOUAiFLJYZRr34pZAK+Vi46ckJX/Bz5MlvSDB2GdzDD5HKpV7+Hsh1aE3UCP7rbUWHYG6AJTqvv6N1I6wa]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9SgR
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Skq 
+
+数据插入成功。
+抓取结果 [{'msgid': '7cP4Rh7hWQYhsRrovY5NLySxRG3JmZGqh8tSXhQSEEG4', 'send_time': 1743508832, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAVrQvcO6HKQZcomIg4bnqkQ', 'welcome_code': 'KDJ1bTinqmzA9F-DP2SLy02tSYnETQ79CpRRnBpUFVA'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:42492 - "POST /?msg_signature=0c38e7269f86324da4f9255e860b9755c49e55fe&timestamp=1743508832&nonce=1742734569 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ni2QnOrE4u1e0K+tNoCPaawPTtmBs5ykaqWMwRBEemgcPQ53SaiCaeaqDq/OQmC2z4cbeDP49rC1Fxz6CmKF6OMh0ZwG1vkqUZKFXR4CwJURvkVPxS+d/0Ai/U8q4aCzaCvbavcp0IuySA7iCp4U+WefeUFEB7Clb7oFt1Tzm0shpmTiryfqq9vPoViFRoSvJtI9PdycNy7+pB7zJgmDCthMSfAXakhG1lD51VhdAMgazN2Jvk9kJ4mxx6IR61pRIOHFodHVV7U8uzzIYYs+sPNGIN6gGp4fUyBRBW0K4u2cIiC2Kt63ZXiFpPsmOAc7OYmRBar5aUWzIFskKX/q2D4ZphJzkwlMpXZmD30n85tGUMzMUuw0Hm/GqpnVfqF4oS49gJt1K95XMNH0J2dsKt/RB7zWPG9aZCT7YOTFrQ5UpGQGYf0dWvq4BaeHlURcbz1LHNI1sjYFibwS0xK8ZGn1Rtp6fWneO/jsnjwY2GyVAlLM/DApUSvc6aGyQLGc]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Skq
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9SqF 
+
+数据插入成功。
+抓取结果 [{'msgid': '4nLd4Z6Anpxp1ox2QFTvtySax1sEAzmPS45hSG1ncjDB', 'send_time': 1743508890, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q', 'welcome_code': '8Fs4SXNuos8RdlHJI6Yhi2SQ0GYr3CT7W9tMTpdfwYc'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:42556 - "POST /?msg_signature=a667dee93b69256bbca0fa0d1d0e0b8d22ab8744&timestamp=1743508890&nonce=1742775230 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[HKHUh1htIFPY2FQsWy18Uzsv3dNNPu8YVToEMDQFqs5KCeE62JQxHw/bHwAS6UG6oX0nYia4isxRsqXRk3vC2PFRvOklM4yzk8wtQl/ankxkrd6o3mZKwthuPYNk1E8vsTrADFJUfsrsulYAoj26xrNtpwEUEfM+DWrLPurH+GwzXss4Ztbde8MW4mDxpI0MzPU/zy1kD0XWtGB2L3OB0MDJveyNHmDr5/h9pwe1FUKZb5FY3AVG81uaKNuKrnlUMC+rUniayhVkcyW00zReiPazvpm/+FRrOOCE4Xi1b3OJQqmo1ckeGtM0rJPrQvARttB2C0UXLPccamSK3CSdUP6N14fBbEKUHha3FcIjECXlFhEPA5l6cOzNI9/f61qWnkchjHexNMT+tLPmdoVTkuU/0rNQspnsupAa8z/bM+639tD52JpRpS3jV09BISTskYyBpy9OMmEBD7ihaWu6uwuQ2k8uMXwiaZOy0AqjHFJ+lDxBsEyXfoZse+cXlh8P]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9SqF
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Suf 
+
+数据插入成功。
+抓取结果 [{'msgid': '4F7CUKZRujVZdMcZsLfXQGPEN5HX9hH2w7rQJMPmnUZV', 'send_time': 1743508910, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q', 'welcome_code': '-s1k8-0AmGiTmSCMWwAo0NG6WjcNSeGHbAFrqS8Low8'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:42580 - "POST /?msg_signature=6dfdfb5c15b7f580f500ae0a64af93da00f50571&timestamp=1743508910&nonce=1743157424 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ueDKtcJa0AWp8RKMtWFVDFw8sayQj3uaNxZOhPhv6/23bGu3VMnf+HrTHfoiRjrneeoBKtnMgCUKOjnAgVZ/QgFho/Mf+jU+Kaj6g2JFN0zMGSchoas5PmaJB8eIc4QOC/Mw3H392FHBikz2PJpAwd5EziSDATouSWLMP1LSVw79XdjsquQv5pYLzaRrYyF5/yrtQeVlaVLfnUwxbsVr1Od+bIKcDUWJF4yFGsrMCasUljbKbK3KRdZR81oCHCdlxQN0FmR7w9MtXAfjJOlSIoCXQ+qmMCrynnZ4kbUrp1JAe6SH9/mzXBYcn8BnpHPxS3Iz9ihRUxJX+VVHVLlj2RNivdqOYvTQWcZ3brQidOk0VvpMW4Tl1ZTW2I/ne/U477Gi/cR4vydhm+7kcQCeg6NPuayL30zNMAEthme6iVCK+00gv0H6qXuy914ycddrBll4t2rdslauXmLO8P3OWND915Tu5qFFpEnvccu1YJGyoas8k4atpeSinDMPfgRt]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Suf
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Sz5 
+
+数据插入成功。
+抓取结果 [{'msgid': '7kApCwTMUZUfiV3K4JPGn9YVn45pfoqxtcxBuM1jdnxj', 'send_time': 1743508932, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q', 'welcome_code': 'yPZln0ZP62b2nO-AzdsLYva6wRZ-Lm9mwykiNfl6QBM'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:42606 - "POST /?msg_signature=f2ff72f4da92861a7e37da609c08d8421a8ad80a&timestamp=1743508932&nonce=1743103203 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[MnfX7ATBXIFDR9jqBlKU3tYz7gFIv3ysjQ2G6VWKhBXUE/oteBYRHkjljVwLK/MQzm1pVZmfbNqzbMvRnK6YzGaFjrrKyamB5k8lePaR087lE7AuRMvCrEiSov5654JYAZHvSRqrBqsZLGLmqD7HEQz2/ToIPD/7RdJF2H14eDSGoZJ38c3loD+s2qFcD6uybKLkObsxCi5PvlX7OIJHsyHm3ARbr5bxhuPhJNt0d+Hj0sUsIv7/kN1/3HCXfqwFa5A2TxRqybpkmAqfzFxA3cTeNq2Xfb/Jwe4wPuV+IiPG+8q+RXPRFMP1xUnZEyhKlsZpn+75SMRnk+MYz17sCXoKwxqk4zXg5PBV399jgbvrBOycTa50lslPcOKEA4St9beULybgW1xHt+qejHzDSnjXczHCNoAhQ4H4MZMQve4amU0caKVKSUMEh2lhDw0tnp8j1zX0VsIwS0J22InWQ1yeQtn2MCqTdcD31oJ/ztqILoqOc8WiZ1O+FNhYy6hr]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Sz5
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9T4V 
+
+数据插入成功。
+抓取结果 [{'msgid': 'BHuTYqUFp7MUGvce3Cest2zX1f', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q', 'send_time': 1743508936, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'BHuTYqUFp7MUGvce3Cest2zX1f'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:42616 - "POST /?msg_signature=2d55ffcc4da633a585daf41646feae46db75027e&timestamp=1743508936&nonce=1743046219 HTTP/1.0" 200 OK
+make传递的数据 你好呀！😊 很高兴见到你～有什么我可以帮你的吗？
+发送消息的客户信息: wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q {'content': '你好呀！😊 很高兴见到你～有什么我可以帮你的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '72c5a7de328c5b802fcd43a0437ed376'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[GqxbBeUCIxfAv+BdbHGQJxRg0z0AdElemygYnNHVUvEh/TsyrGRib/2Zh4lW8WLuUUTjzZduvJzy5un5TnQ1Ep6A6E5I8hYH3EQ14GCROYfm3+oaEToSSDMbLvk/6cHicMAiVuQiQztnPdbA49sVMJrQ3XmkWrmGvo3F55U/zEKImPhBWZhHnsJEARYKu3qJXCBQSOiDhpUbX7W6yR6qTov5uzuiQEk/o8OSjhkvj2/g9G35wYdXEXFlCIyxxsz6a2upVjt7ZMdQhKv5cifjhGr+E6s01LiP5vqjkMX4/9RjXG74RwWlDtL11z0NCkDGSeXOX59E4AgtfCFS3hy7Nv6BKqfnjbo42yjUEJx+4v9Yre01SIYuU/zM0jfkfM6BJs+FLsQC+zzhZ84ae8+lMafIUMqPHhMj0R9f/hs8qHkABn1J+AskocZRonIzFW7K9pVKuwMh06I1QgM890kLGUY+7g6wKZF3XDRSM2inmRUaO7iEN3F8F8K/IPxGG3Wq]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9T4V
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9THj 
+
+数据插入成功。
+抓取结果 [{'msgid': 'AC2hAYYNCumcyCWUmQrme4dSw6', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q', 'send_time': 1743508961, 'origin': 3, 'msgtype': 'text', 'text': {'content': '能帮助我做什么'}}] 
+
+发送消息的客户信息: wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'AC2hAYYNCumcyCWUmQrme4dSw6'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:42642 - "POST /?msg_signature=636b0090be6bab1669a8954f1b4046388c7f3928&timestamp=1743508962&nonce=1743449149 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好！我是你的微信聊天机器人助手，可以帮你做很多事情，比如：
+
+1. **回答问题**：无论是生活常识、学习问题还是科技知识，我都能提供解答。  
+2. **日常助手**：查天气、设提醒、计算、翻译、单位换算等实用功能。  
+3. **娱乐互动**：讲笑话、推荐电影/音乐、陪你聊天解闷。  
+4. **学习辅导**：解析数学题、写作建议、语言学习辅助等。  
+5. **工作支持**：简单文案撰写、会议记录整理、时间管理建议等。  
+
+需要什么帮助？随时告诉我哦~ 😊
+发送消息的客户信息: wmSpxwCAAAW5GxQVk9bGTMx_WKIR2J9Q {'content': '你好！我是你的微信聊天机器人助手，可以帮你做很多事情，比如：\n\n1. **回答问题**：无论是生活常识、学习问题还是科技知识，我都能提供解答。  \n2. **日常助手**：查天气、设提醒、计算、翻译、单位换算等实用功能。  \n3. **娱乐互动**：讲笑话、推荐电影/音乐、陪你聊天解闷。  \n4. **学习辅导**：解析数学题、写作建议、语言学习辅助等。  \n5. **工作支持**：简单文案撰写、会议记录整理、时间管理建议等。  \n\n需要什么帮助？随时告诉我哦~ 😊'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '89ec7fa53b0fe106fcb7c50afdf1e663'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[Wn31bbYmPKQ0qmMaX2HIdgk0kNaBJ9qFZV/eNNmKc/eO+SUQSN69FSNN2Cyn0B3Li+aazyNDaYv77E09egBuXGivlJN03dgtJ6MAd4mHzEFfZobVXaaywW3zJH4HXKACfShJqQrstqxE3yicInDgCjnK6dRgN/Q6bEP4bBDuORWrDNlxBa5cEUz5rNs7FnL9q3fcpwfaPKecwyHpS/5GG2UTalZb9uLOdEoSQiMlSzI+fP3KQua7Ui3tWi7Vg4aHqAvhfw/261+eRR4v0V4M2ML7fhMLaV8CBHX6mB5xKLDHtPGXAJyv1QFkvPENBcdtCdrCkcpygyDersF/fpNa4MNYZ1rblBPrkttq9xh2QlhnF6bOx7WXbiMzxRM8P7OMqScEU+ean3jVC4fMJW+cr65U6CxgdvNP5xkmdOsQkm4JS2/TV+fkfhDeauH3PTFrxn6wbfOisvHM+Q1wCkyJOqAuTTLE0fjfct+hn4FdBFe4XamzIZCv2u421yTuTNWm]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9THj
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9TWy 
+
+数据插入成功。
+抓取结果 [{'msgid': '4jFyBBsJLGTh3cV974CpVEn6USX1N5Nkm8q3wyv67FSt', 'send_time': 1743510272, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAK57d9RL7BpPfR4VahiLxYA', 'welcome_code': 'S_LXEwxUoca8GqOS0_7suAHVMvF5qR6zamCTjr9MgKo'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:46952 - "POST /?msg_signature=d40ea5778fd21d06efae82bda5cd3e564d61cee4&timestamp=1743510272&nonce=1743251860 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ROG/MtTaT9187RGR6oM4q1FAbOnFy0ry3rPQVUmuJQubjV1zRt64aQKrpFfNhuj5CaxSxhdNBhfb8k9hc83GTRIOdWTtpyebLsdZ/D9pOuJ9xJX6IeaVl/Chd6rwV0ah9FCvfeHzj4nowL0XG0nYPBgqxCfXNkjjRKlT5ahbOgriNc6KvKUvaUjpd0OkJlWyAaugP5yJEfDyom9EkPVeyoQqb9/0BRsazFOB6SL8To8sPMOBoekVBqVkgp+pTGcgwfFm5aCTcvfNm9DLtKGQx+u0QaZ9Cktsi6VIpLFZC754hxJ0/H+OIdJpbZr5qV80m7KKviyt21fX5Cyze63vc/eXf4nqJBfoIvD5qGujWLGuJifNHyd4J5hs+Us3ShsM3fKnjr85cLh4T4BEIw32u286Bbml0vOHeVMiGJj5vx5rGK5AmJoEtcZM1YCy+YjE88YmlfxXZ8NZuT8qKjiM33mTARgCjvnbMupwfgjxVrXAtb7xzrtLcnN0Na+XGZqL]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9TWy
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9TbP 
+
+数据插入成功。
+抓取结果 [{'msgid': '4KkwEpTrf1BL1PyabKFYoQ6DhiwoRCgdjGghmxHcyd7W', 'send_time': 1743513244, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAABbI4bbcShmy65t0G3gD_GA', 'welcome_code': 'Lc8P15L08JaFl8Rww1T7__rNLlMlGU7IyR9P8_2gqG4'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:51718 - "POST /?msg_signature=f0609d8fdb2fa556e65f1049326287dc735f6c92&timestamp=1743513244&nonce=1743141173 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[w4OoESbMpSJ8DgUeuvWw9ibDTcNSE/cZXuoN1tNUEpcHcyROil0NIL37cInMsOA1ByivreeBUKKYOmR6HrGFs5oiEkm2FxCuyP5LQqgXA1p7k/ZyjMCANhQDftU5ACoOlrt7yrUHk50VtVKspKNMbKxZBnVK7b27wvsIuCYmipzP4VJMGT+tuRIuessKgpnpRLfCMkSZtCaegpxKPBayU+NECu16Ta/Fqm4vm5S897EM3os/p68ONsyCbn2u643A6ZMkmoQooPylHk0isB450C9/IZWtGMhnfPIt7G2Co4lgFYKSKFUiIG5My4bRQLskwiAWrDjQZ5mlMs+mb4zkuZEa4B3WEq3AKqCq2juTUFpJU13MmjjkOLtrPEoxSXcXWfvk1ggzGbwqwJs6iPNbPbTLNuNfCX9hJxHmxh1ZH1d3KBOgET89X8Unp5p5S63ruSGdv9xx/0YoSz8beCrouoPt6lfhlht/jJlqhVCcGAR+RBvd6sYRT33GzodVmtal]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9TbP
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Tfo 
+
+数据插入成功。
+抓取结果 [{'msgid': 'BHcdwHYyoprTnWySNTKf2Uif3p', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAABbI4bbcShmy65t0G3gD_GA', 'send_time': 1743513262, 'origin': 3, 'msgtype': 'text', 'text': {'content': '现在几点'}}] 
+
+发送消息的客户信息: wmSpxwCAAABbI4bbcShmy65t0G3gD_GA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'BHcdwHYyoprTnWySNTKf2Uif3p'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:51744 - "POST /?msg_signature=6925b1ee3316d80302c0e38a82aa82c70f014942&timestamp=1743513262&nonce=1742948610 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 我是AI助手，无法获取实时时间。建议您查看手机或电脑上的时间显示。当前时间应该和您设备上显示的一致哦~
+发送消息的客户信息: wmSpxwCAAABbI4bbcShmy65t0G3gD_GA {'content': '我是AI助手，无法获取实时时间。建议您查看手机或电脑上的时间显示。当前时间应该和您设备上显示的一致哦~'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '0c841c52ad04fff9598f49f8880f4bd3'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[SNB8OyLkJqYs2RJaA8OR9UsFySeVGosyClIv7lvOzGVnIzy8V+IP68QcPkZKfnaSHAMnkXbavLDz6PnCAEYZWi+feyBYnvLzPiFWgMikJs3w41a5J8if9K1oK7Xe0Qmne+zxu8ndZ3+ASlYtsFbV9s16YkNQDIzolAYziWwYgo3O3ZtHJMz2jGM/d/x0Biuxgrqwm4z+xKJ/UstRCSw0J1sd/HayOs1oY8Enlo+sS2lh8hx04b4Hai/DeMnE9vyifwSfUv2Jk8RV6bYcksJmqRBhpGaTzkctXgw0tITaoWjN87wBLg36n7HWqoABbGgLmsZsK0SqKBQN/muP4U5XOobTZ5beGlz0UQb02CNaJgihTtn6jHbm12vTmS4KDlnFMFRCtpxsr+Lf8TubBcrhX/YtFks1KjIEU6T62SPGgoyuvSQ6Oks8c0rtEILnrop/B8bbCwszVpWANq64TOIIJ+0qwEk6pxXoZytHPaZyXws74CywHaX9iP9sfZX8oq2E]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Tfo
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Tu3 
+
+数据插入成功。
+抓取结果 [{'msgid': '7p5EexYEmAatvHUxHd4g3KPEpmPGi6RYpw4S3jCuamdP', 'send_time': 1743514554, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAXDD7ZD-gfSrzqVxi5Ot6DQ', 'welcome_code': '4tCcH9IKAxIdYLY-UxpD7-xlmcpN-F2Cvq9KHbo_5oQ'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:53022 - "POST /?msg_signature=017c0aa101ebd1a7cb47827008beb177d2e81388&timestamp=1743514554&nonce=1743565726 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[74LgytZXRrKULJBBw5+O55zWx1rZGJhr1mXkbrnkxSztrfSrKkI0GLKJSxQ7bfl9lkm+xPw5Kxrd5DKW1UhjwE7qU2I4w4wuaOInlgJqmu/SPJLEXiS0idydVos0IbUeaOX1bwoovFBF0Q1KYdlz6ZRFjY7w1UqIiuP71EiFWc/Vg2VpIq50RzDPWeGviy7XQJ3AxrWr60Uz64aSY6IXNSbITkTGPFqQZRMquED7SAY4k7Wu55fXcBWoV2wsWVZ7+kxMABbZWYvXdBlCy+qNvDZoNvulRg0JGBFp1DnF9Bg6naQ8A4VpfUecHo5ocE24dyvc3te+beTwieYfqlTrUozR+kYTkmOdQe8L/fdlGnCh4tssOQmcOekXRDI++1RT8Vq+ikC7+xEVnce7WQ06GNJHbkKKwL628PdBaj7ev3oHRnEc6ZTv20iZ0JD6aIvOWp/JbFZ8MjGgZVYUJ2FDr7bqK2/bjMvZf0IiGi6aMs1K91JBQUfoaKgJvef4969C]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Tu3
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9TyT 
+
+数据插入成功。
+抓取结果 [{'msgid': '4o7aXCnVYixrG9vT5NvD9zQAzHiuPH4UpTSJn5xPsQby', 'send_time': 1743518105, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': 'uOMnr4oxfOKMWbqKfwaIFh8nzdEfooeg6P3FezZjgRc'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:56602 - "POST /?msg_signature=5c974ad356342a44c5a1ea36bd08af0d329b8493&timestamp=1743518105&nonce=1742893207 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ipWgB4NwsT2kxcm4eq5GwVD0Q7EjDR5UXxKDM4lp1fuawY/4rlfKyyBwHdIYi8AInosX8qE4q4mcBvVW9BwCr723SwFio+vH2Rv9qmHE5c1ZbzvUnONn3JUpV4SG+XvYTfMekZLx/D7dXM0JcF3tJ1qmft5NALxfHWkRKKMp3FJ4Z9IhE2uT/uybtZF6freaI/9odYdNNQLXaDEWnSgykBFV86vjxfnGW/r+rG/kko62YnzcI2CBDwiDfzc1zrbWYIyYjU3vgoUU9E0+FjL6vwwVhBZyGaWSOLapdtSc4nUteRFVdxdHBR++mFheyi4QIDzqWpXEPLh0++JSNnU08b7M3x8Hah5JSAsUiAjDw3ov7T6NvkLnp5EDq02r5StwZC0gVERVqi/EDP+7SN7gqMc2BIuB2vAd4lJ7wLB3jUpvEgzy5Oj/+CV3AitKSgJGDVyKEVJi3Vd5O0ffnEBJ0g9rpQk+n1YcwX0DZNz4BUJbdBKvDw+UYJe/DPpaTsEI]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9TyT
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9U3s 
+
+数据插入成功。
+抓取结果 [{'msgid': 'A1aUTv7on5gkSgqqrz59pxBbTh', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'send_time': 1743518109, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'A1aUTv7on5gkSgqqrz59pxBbTh'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:56620 - "POST /?msg_signature=ca13f30898ad2b181d2598fee63edf8cabfa2929&timestamp=1743518110&nonce=1743464121 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好！😊 很高兴见到你！有什么我可以帮你的吗？
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '你好！😊 很高兴见到你！有什么我可以帮你的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '9d8f63f519f5015ff1cd08f7282cf4db'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[A1f3h37dqAZM+r9PuaEjq2HdIkYzz6F11sW829GQ+AB1Lzpfm4CnAPWZ8/Ajm+v+VMIn+xlPLfEm6KHXCskC1x3U3/5JlZ0U0NNZ5LgUB4SXxIXSLpJe9SzHz07sfZH4/mDHR5bFBLlFBru+Ldrz43IxEe3xwykqgMCeULRbZSO5tT7g4tfqgVfei8xiO8aNJes0c1H6pWRmj7ZX/MVlGrn2hl+YPcixpZjqIKbHH12fxBhvNc2t1a+9WiieMGsVNLRWcODIL3WWyXDUZZK2Gd3XWK6lw2qIIgJbzcm9mXYFeBph2eon06Alb9cXOym+d6lpg9/LH49fI25NXaYqkmTHzvXv/4SeVN7s9dyAR7knHgTrAIqtkXJm5wvIBIKnEv8bz/0l212ceGjxY4oRlEq2L5mjSj4W3+h30ZLgD/WdJFIdYcMVBWy3eDW5Mp/EKJoZP1Px1Qo82olZZQ/2VUZ7km6VACuLEqnSn3twaLWlyEO76zTWDC2J9Elkqa8k]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9U3s
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9UH7 
+
+数据插入成功。
+抓取结果 [{'msgid': '4iWTv2GwKQYdNLnX3ywk3L46iQrfGog6Wq2thehmEHue', 'send_time': 1743520161, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA', 'welcome_code': 'TFCQxZqlbE5oi_Cz0TpIM3YY3-_CINC7-QQzus9E3sI'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:58654 - "POST /?msg_signature=72ab7ee5b7d289ea459acfafb2a54d8f3f357854&timestamp=1743520161&nonce=1743154445 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[3MkH+R9V/AaZE6uqXLhp5Qi+7eUKmHNNQau/gxk80N35XpP8WhJ+0R4E7ArO0tDu5LsPH2X87FrRnwmG/gsjElg/N8rlI4PeTjb3RZJRAOCIGLOh0U3pnKa7yNyx97WCn3b4i+CAChoDbzKYbgpIUj6EKf9tEXeCepBfrj+h2Uq+WSiOo7Bc4gjotjFAxNFYgvhhV74C9+DLxoix4bO+MBr+vNS9y1fNA+rLTHVs3qwdE/Of5ok0o+4trf/onaFy1kYkA0QWSJyUMG3aKPh+zgeZ4N9PLFp8iMo3OYM/ATJvFHg39I7I6AzTP0GabUOH4VpBAzK/2/hF4d9JHxbPYdUWXm5Bm0A2vbwOrOmxbwJJeiRlCuIZuM3FdSRTu2QjV90NqnBYfADUhSLRDC0EWdBH7Ip3AF2mmEAwMWFlojw7icZTgkIHn8mWQ12IoksYRaMsN9kuWTXOn38VexdWWBdGsaJxZCrJBH/CnuO7fftJqUPcvveZTzcufRpCClcF]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9UH7
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9UMX 
+
+数据插入成功。
+抓取结果 [{'msgid': '4FvxqNPpj3ZKtcMUmqPAKE2gHoMthcoDRktUTNCwHZHH', 'send_time': 1743520246, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA', 'welcome_code': '0i8yUOX-X_XINSEYAks0V-4om1xsAvZJM-hImegEb7Q'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:58740 - "POST /?msg_signature=75f6a93ab6303f84a5d33e49344a0c814af3d6e4&timestamp=1743520246&nonce=1743366997 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[EHthoeXTYfVAFlhw1oYirh7HsCW4mhIMOaDWiBONIcpd6gQgHhEJtHlW1YWP3pW+CbN3hT4+Ls/RJeqnJ7adPtxqZuuBZb7kpCkzZUqfCP2dpCHEJKSqA5oKNbP1ingx5MOnpp7pgMZXNCPLEGDTPop2ZqtRHAclgwYZNywS3AuS+ZTD6kgMBRdMVg/uP3wdkwmay1AN8y6V8MrkDWT4ghhmkfEgtUeEdlzWTINJrWJTdA6LILcJ78TZfz16c62zwp9eeI+O12Ker84KEKAevOVPqWPKv3m+Cl67gnQcQmOnaNLRltlhiNBEhMQgYegaPJqNfQrwx1/NhXOj1AP8QFLhKPAHujHLNuT/yY/Rd/OGAy48MDKhJenUVZh2Rw+sIlGl+llpAvh4jXcqQEbnIu6RFh61CyXVeXNlMAajt0SH56TvYW6ZUw9vfBZlvTpyywqJBTyaHM/qo8eP5B/dVz48bCBCXPGFYUZGze5vyfSNnzdCnL4j7cJRFjqMVZvC]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9UMX
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9URw 
+
+数据插入成功。
+抓取结果 [{'msgid': 'AjoVxMB5kMRkHjCnPy1ze4UyCG', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA', 'send_time': 1743520255, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'AjoVxMB5kMRkHjCnPy1ze4UyCG'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:58754 - "POST /?msg_signature=031a4e52ad1f4051f90ae8766ec39e7095bdee5c&timestamp=1743520255&nonce=1743719862 HTTP/1.0" 200 OK
+make传递的数据 你好！很高兴和你聊天，有什么我可以帮你的吗？😊
+发送消息的客户信息: wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA {'content': '你好！很高兴和你聊天，有什么我可以帮你的吗？😊'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'e460bd430fd8f4af3dd8781cf2b817e9'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[nNV6mYo2rmrLLYWse0JHcIzKvfb4hQKhCvD4XBucDa5I0ge6tLyuBanAwe9n+IPgrCLU7UqEpRcr1CtnnyqcuYmgSCHsENKN0l54g9iiOHazsmfD/1sN/iFfLRkfPYnfRUGTQSZ/CvIKHsyUre9c49KbNzxsaCvdCCjWDBEyPHVcJmUPvFG4xk1z+1LIPm2KgBDD4EmH3G07HTHxuTkCj+0cMfz+Od8ezBD4apbJorwnDI6UNGhL1dicpzW1KEnLJvKDyhJRm/QNBQJRBMIkGqBzdnfRHdOLnZJAzctwiHpiJd26W1FGtN2iGLC96O/bXmqWpaLGXM84aI01CgnV7kEL5vtwg/kgLObyYJ5Kyr6dp5/xqAO6ZDVvm1HHhNFOlrAN7Lh6jqv0eect+kEs9QH62V55mSFbLGeG/PZwARsZ3zpDlJyAIIY4Nvymqel6jd8/zn0asZsUtFB9a4kDi1X6w9AWyVbJR/nj6wHPNhoyryrnyOQhoFaQNdJz2XNj]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9URw
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9UfB 
+
+数据插入成功。
+抓取结果 [{'msgid': 'AvTjkp8jSqMaRDGuA7GnbEaYgB', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA', 'send_time': 1743520298, 'origin': 3, 'msgtype': 'text', 'text': {'content': '想了解下make 的工作流怎么做'}}] 
+
+发送消息的客户信息: wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'AvTjkp8jSqMaRDGuA7GnbEaYgB'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:58804 - "POST /?msg_signature=6f8b44237997959c9f186bfb402ab7d7399c4d37&timestamp=1743520298&nonce=1742805353 HTTP/1.0" 200 OK
+make传递的数据 # Make 工作流简介
+
+Make 是一个自动化构建工具，主要用于编译和构建软件项目，但它也可以用于管理任何需要根据文件依赖关系执行命令的工作流。
+
+## 基本 Make 工作流
+
+1. **编写 Makefile** - 定义任务(target)和依赖关系
+2. **运行 make** - 执行默认或指定的任务
+3. **自动检测变更** - make 会比较文件时间戳决定是否需要重新执行
+
+## 简单示例
+
+```makefile
+# 定义变量
+CC = gcc
+CFLAGS = -Wall
+
+# 默认目标
+all: program
+
+# 编译目标
+program: main.o utils.o
+	$(CC) $(CFLAGS) -o program main.o utils.o
+
+main.o: main.c
+	$(CC) $(CFLAGS) -c main.c
+
+utils.o: utils.c
+	$(CC) $(CFLAGS) -c utils.c
+
+# 清理目标
+clean:
+	rm -f *.o program
+```
+
+## 常用命令
+
+- `make` - 执行默认目标(通常是第一个目标)
+- `make target_name` - 执行指定目标
+- `make clean` - 通常用于清理生成的文件
+- `make -n` - 显示将要执行的命令但不实际执行
+
+## 高级特性
+
+1. **变量** - 可以定义和使用变量
+2. **模式规则** - 使用通配符定义通用规则
+3. **函数** - 内置函数如 $(wildcard *.c)
+4. **条件判断** - 根据条件执行不同命令
+
+您想了解 Make 工作流的哪个具体方面呢？我可以提供更详细的解释或示例。
+发送消息的客户信息: wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA {'content': '# Make 工作流简介\n\nMake 是一个自动化构建工具，主要用于编译和构建软件项目，但它也可以用于管理任何需要根据文件依赖关系执行命令的工作流。\n\n## 基本 Make 工作流\n\n1. **编写 Makefile** - 定义任务(target)和依赖关系\n2. **运行 make** - 执行默认或指定的任务\n3. **自动检测变更** - make 会比较文件时间戳决定是否需要重新执行\n\n## 简单示例\n\n```makefile\n# 定义变量\nCC = gcc\nCFLAGS = -Wall\n\n# 默认目标\nall: program\n\n# 编译目标\nprogram: main.o utils.o\n\t$(CC) $(CFLAGS) -o program main.o utils.o\n\nmain.o: main.c\n\t$(CC) $(CFLAGS) -c main.c\n\nutils.o: utils.c\n\t$(CC) $(CFLAGS) -c utils.c\n\n# 清理目标\nclean:\n\trm -f *.o program\n```\n\n## 常用命令\n\n- `make` - 执行默认目标(通常是第一个目标)\n- `make target_name` - 执行指定目标\n- `make clean` - 通常用于清理生成的文件\n- `make -n` - 显示将要执行的命令但不实际执行\n\n## 高级特性\n\n1. **变量** - 可以定义和使用变量\n2. **模式规则** - 使用通配符定义通用规则\n3. **函数** - 内置函数如 $(wildcard *.c)\n4. **条件判断** - 根据条件执行不同命令\n\n您想了解 Make 工作流的哪个具体方面呢？我可以提供更详细的解释或示例。'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'd42aba30bc9bee7f1f11c3d741178ded'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[paF+xhGWsnFrqgcc1fTUpITgAtgRITtAHL5az5YcjFGi0IAMyUOoIhotTMev641dw/r6l62noGNt2Xx4XTzXNZZImT6EC/QEWXbchvFeFd69LpjsDoYxGIR3FO3O/LmB1d6xc0+OfvboncVJmqFFE0ApQuTaIJLCEV9Kib+MMgsO+lRYPerYSa5T7YlaP/IjYTPKhy2jVsHVQcnVIBH9csL52OC1EsmLFggaOHmdZEP72XTfR8zXFAvteTkElnD2gU81Ih2JTm/07mtMcAyj6K9VaUKa0DiiPOsq/57IPyZPECVLrg3PnhIN3KUdoaFDoFYycjO+x3mE6TCAllmKt6IKQ80zf2J7JA2yAFfz9KA+KcqIvHAWE/pZAbUTu91jMxldQlo2e94QRN3xV2pEkNBc3rxRksGeg1DFl3XLtX871VE/s3y5P48ayOcMVEknK6jsYm8ZUAVgUa3LY1gzuQAzPGVF+0+I+T8ZhXC1vpIETsDvr6ZWyE2fZB88LSvf]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9UfB
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9UtR 
+
+数据插入成功。
+抓取结果 [{'msgid': 'Ak8kBYRS5h2FLzCRbCWjpEVKYM', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA', 'send_time': 1743520339, 'origin': 3, 'msgtype': 'text', 'text': {'content': '分步骤讲解下行明'}}] 
+
+发送消息的客户信息: wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'Ak8kBYRS5h2FLzCRbCWjpEVKYM'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:58848 - "POST /?msg_signature=5652730d562f1009bd27dc5d74951c63fb4e2023&timestamp=1743520339&nonce=1743420492 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 好的，我将分步骤讲解"行明"的含义及相关内容：
+
+1. 词义解析
+- "行"：指行为、行动、实践
+- "明"：指明白、明确、明晰
+- 组合义：通过实践行动获得明确认知
+
+2. 出处溯源
+最早见于《礼记·中庸》：
+"博学之，审问之，慎思之，明辨之，笃行之"
+其中"明辨之"与"行明"概念相通
+
+3. 现代解读
+包含两个层面：
+(1) 认知层面：对事物形成清晰理解
+(2) 实践层面：将认知转化为实际行动
+
+4. 实施步骤
+① 观察现象
+② 提出问题
+③ 深入思考
+④ 形成判断
+⑤ 付诸实践
+⑥ 验证修正
+
+5. 应用场景
+- 个人成长
+- 学术研究
+- 商业决策
+- 社会治理
+
+6. 注意事项
+- 避免主观臆断
+- 重视实践反馈
+- 保持开放心态
+
+需要更详细解释某个步骤吗？
+发送消息的客户信息: wmSpxwCAAAjyd5vZpGgTHdxLgceQS9AA {'content': '好的，我将分步骤讲解"行明"的含义及相关内容：\n\n1. 词义解析\n- "行"：指行为、行动、实践\n- "明"：指明白、明确、明晰\n- 组合义：通过实践行动获得明确认知\n\n2. 出处溯源\n最早见于《礼记·中庸》：\n"博学之，审问之，慎思之，明辨之，笃行之"\n其中"明辨之"与"行明"概念相通\n\n3. 现代解读\n包含两个层面：\n(1) 认知层面：对事物形成清晰理解\n(2) 实践层面：将认知转化为实际行动\n\n4. 实施步骤\n① 观察现象\n② 提出问题\n③ 深入思考\n④ 形成判断\n⑤ 付诸实践\n⑥ 验证修正\n\n5. 应用场景\n- 个人成长\n- 学术研究\n- 商业决策\n- 社会治理\n\n6. 注意事项\n- 避免主观臆断\n- 重视实践反馈\n- 保持开放心态\n\n需要更详细解释某个步骤吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '24396c681746ef051c210612445a10e0'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[RsU+xF0NQ6NEj7Da0HFsWNQYPu8TUMfmacXzzst9TLB+IC+kS9FZn5Gp9glSGSIUOlpKop06zjR9o5lSZ6XLif/+F8zfEZ+kxf3YRkZ9yS7VyUcdhhryeBpVq+laJp/l8ZFJzbSplbsrcTATGJiZRsYG4Pqbce/Uy3gF06881WALeFiJm/JcVsl0E33OcpMO0HAUIrnVPB/u61V0ag5XZiW/vlHpuVBBf2TrSsOAqzN4qr0soIIDCeWdancE2I4vrok1N4h4Z23jwpdnD68j1+uuq1yLuFseZAawBgMDnhT+iCbyGXdWQmfBUKN/PFne9vqg6WUYBEqqCD7LkbvXv975WTcqUM41sSMycDImdrSAjVcBC7nyD+bb3Adh4LFCEFV8WzFQSAW3ZdgvvWiP9zrZcjOHkarbCDPr/9jIYdBPvy1dih4P3bPV9ogDOV/FHLsVMC2K85DAO68nJY++OwQ4mhphUi0Mbdo5VCR/0eltIxLkuZ0Dq3hhCjBdpqI0]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9UtR
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9V7f 
+
+数据插入成功。
+抓取结果 [{'msgid': '7kBj4nHZz6hZHFZgFsXg7Uhvwmu1e5LMh1ECToDPouVm', 'send_time': 1743524748, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAqKBVsJGpUg8jEJULU4hrIw', 'welcome_code': 'fotTO8gnuHMkIHI8TGYH76HK39OiMyCpw43uvCN0kxM'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:34960 - "POST /?msg_signature=d3abe9316fb1ce78b3e39b0081b08a06b726fd05&timestamp=1743524748&nonce=1742824179 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[eAHxsfZgClwqnI/4Bs7EXQIFrYMwdKlHlRxmPwphZ5bQjRelyy7CsRcIjhSOSoQm4HMjRV+kNmGFhCow1Inj+IvNM4RgVy6VDZi9i6Eb5lJwWyMIREPFkeNKAgRoNhTyNt370az1DpklZHwW4LzZJQM+aWlx2gTsy5lB2TVBVPgyKniBA3vQKBWzPnnDSGTV3aC3Ok6Q6adI/5zW6gsdkxZXO7x1J08U5hq9Ik9oSYqTrwoJWP+LubMN/JKx/ehS9MKKTh71A0eJnWQqlSTg8uQ97/odMQENIywrcSTcjVvfITzye8pIa1y4YMKrXumx6JNxWuUt/nQvuzG7RuMhh5lT3W2zv1BYucU2PmDBc8qsfhPdV182ur2zjJ0K3PnpluIEGLX/3ZWmJ3BhPvLl+BCQ7OSh7iKFI1RWhAI8aaHplNHvOj09dmji3aHntWn5Mxbft2oEIq3yBOKmCEQodav2K557N67alkHL5kC96sM555GJFlpuUN27RkZV1gBv]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9V7f
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9VC5 
+
+数据插入成功。
+抓取结果 [{'msgid': '4FtUmHYJEoe6TworCZWVtgdUBgDHuULVsTKyqpUNofHR', 'send_time': 1743524846, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': 'KArHXT5b3MXq91w0To-XyD89WpyQoEgk9axB4QKsgLw'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:35066 - "POST /?msg_signature=8f71b09540fae418389d707ea0395f1f8492d263&timestamp=1743524846&nonce=1743640976 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[aDo4dmqEMQaUdQVJNmq6Cns9ovf2QhN0uzky8sw+fbUS/ZnIxFu0KXNNQl31H8g++p2QMwLRWqDV13vsTHAiCpBER2PjcqcfYX675L+S1tAQh+bfP1DByJii0iB79Ib2hh4s1nLEyLY+6RtU6ACO5yvAGrlsqrSOlmxYLAwWpyhNXU/zebV9Kb5B52mQjM531FOhK3AJhJE3ZpX1vctbsCmKWiWK2KfMoAuvoZIk/CL3soYTRc8MIKjyL7ST8wgGy20J4j+b8nmkP3OCxx8Q6JYub0qim+t5KFtyUyfNj2mvGIAcdwI7US4+i8jgR4RTyjrqfDGE+7dWk/HWNhe2FLuHtHSC+13SEq7Cz1lOrraDzpuftIdWxb+E6b7/zuy2XfGrbGwfktK7Kh5mTSh2rPL7xxS8InfWprg2djvY4rjeLYhZmgjLMEc2mYgdjIswDFvGJBe0ACSpAjsKI/gIEYR45fijftIjj0x+XiZXPaZ0DN0VP/Mk39PkCmcZ6aHW]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9VC5
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9VGV 
+
+数据插入成功。
+抓取结果 [{'msgid': '7teZ4acubAYjTfxMGyc6RvAvwWJd7s22v8RYTGjARCs4', 'send_time': 1743559907, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAVrQvcO6HKQZcomIg4bnqkQ', 'welcome_code': 'Onen4wE3PYBQCdH-0yPXR4mbjvlfaG5Vw29w6iB-dQo'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41404 - "POST /?msg_signature=75dc03684ac4c4e775ab6ac12cbb3798328ff4b5&timestamp=1743559907&nonce=1743336568 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[K82aZ4+iaJolTRBJc/KOTlrAUYG3+2IHsfusStF90WO1obWXZyolLRHFxT4NP1PsvMMQxli7yx/h7K8IZ4ijhFM3P8wpfIYnq8Tfrrx85Y2vAsGEEgAqEzdK+YqgSWhKwRBurcg+Cy5x0vsFDp+onndwG/oVEGBJSOj3JihZYoYR06W93P1X3ZdVVb4lqutE//fofNM7o4UHCPmXP7gdhOpVjVWqpBJJCIY9Tng3U1KJ3XA3jnfHgsFM5JhlsjtLSwjtr54XUvbqyD8HTZxCEtrIf0fKkE3ypj8jw1oUY8zfOY7p5wKeHarD6SqQGgu4tElarQ5hmUgNmnRMiz77mheIaiB7LzRK8nLUP7JWixL4Zp8aPCFYLt5f9NcXZGMkpbfToztyeujfzkUxNG9x1/G4leH8fYxva3nupWTSJdgRbFxDBHCe5NL65vHeN7+pGZ07sF/1U8euS2KXzVlNI9Rvk/khhL9YbOLejdAzhJIiBC4Zj912d3/CaRVKm0A4]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9VGV
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9VLu 
+
+数据插入成功。
+抓取结果 [{'msgid': 'UuXy55g65JoK2qnuKmtHzC5', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAA7jSYfR9-YS89wLlcvzgTLA', 'send_time': 1743568828, 'origin': 3, 'msgtype': 'text', 'text': {'content': '1.1为什么叫1.1'}}] 
+
+发送消息的客户信息: wmSpxwCAAA7jSYfR9-YS89wLlcvzgTLA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'UuXy55g65JoK2qnuKmtHzC5'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:50230 - "POST /?msg_signature=7980cf137240bbd074b16901825fff28744442f3&timestamp=1743568828&nonce=1743117713 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 1.1 这个名称可能有以下几种解释：
+
+1. 版本号：在软件或文档中，1.1通常表示第一个大版本的小更新版本（比如从1.0升级到1.1）
+
+2. 日期：可以代表1月1日（元旦节）
+
+3. 序列编号：某些列表或目录中的编号方式
+
+4. 数学意义：就是数字一又十分之一
+
+5. 特殊代号：某些系统/项目中的特定编号
+
+您具体是在什么场景下看到"1.1"这个称呼的呢？如果有更多背景信息，我可以给出更准确的解释~ （比如是某个软件版本？课程章节编号？还是其他场景？）
+发送消息的客户信息: wmSpxwCAAA7jSYfR9-YS89wLlcvzgTLA {'content': '1.1 这个名称可能有以下几种解释：\n\n1. 版本号：在软件或文档中，1.1通常表示第一个大版本的小更新版本（比如从1.0升级到1.1）\n\n2. 日期：可以代表1月1日（元旦节）\n\n3. 序列编号：某些列表或目录中的编号方式\n\n4. 数学意义：就是数字一又十分之一\n\n5. 特殊代号：某些系统/项目中的特定编号\n\n您具体是在什么场景下看到"1.1"这个称呼的呢？如果有更多背景信息，我可以给出更准确的解释~ （比如是某个软件版本？课程章节编号？还是其他场景？）'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '44b56c42b0af691cdcf0f6d866d7355e'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[4nVQ6bOQdzMurVCEky/+wlm0cOaH54UHo5t1Vfl1UqldQACGjt7JwzMDDPpvYhMXbbzK30bS/Fk6Rf9z+FdknlJw2a0DPaN7RsNMqzyxSrbMS32l6tP/t6aJAbGPfX6tnxYcdD04zurVVB57vj8hVsw78i151vHOgj7kgB/JSI34D6/DHS2Shq66ocqdajaXUpN5HrZfRGITdxnbbQyTOHJwvWAdyb4c2vKvkzwBUYFUl67vEogOzGJol1NmWdUdnQXags+ge4m8FVcaNU7PhkGNjal84/TWar+prdixW2KUDoUrjRSyOcMvC/iSo+9Z2yR+QeQoodVYYwVmeIY2V0sOSpRzEYerhKlphnOS1jIWH31bLgaIFOkT92bJVS18gfqrnO8vBsctK1SsAdqLCPL81/wlRJSd5e9kVWr8KDTNq9/nJqL51X3QROgzyHiaAqKhNQDXWzSXeNJOwfN5i4aQIsIKkJAz2BbHr2SoeP1CzJzIAJfWGnY9taoDSVoR]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9VLu
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Va9 
+
+数据插入成功。
+抓取结果 [{'msgid': '7gDkqR9aPH2R1NCSgQzxrprLGyMULYyUCRqFkye5m1Rw', 'send_time': 1743569431, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAA4v6h_3SwYCaSgkmt9hRing', 'welcome_code': 'uGFli9f7KrMa76s1zlh0tZQdO2dK4Iw_ceiqD5N5ke8'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:50830 - "POST /?msg_signature=6be57ae96a5167ef4d56f80bc0ff3a5878cdee8c&timestamp=1743569431&nonce=1743412065 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[eEhpsceV66zS2g9igufCe3KUZ/KoxSIQGUnCz8nYSZ7KaYgBCiQnXQFONn8bPfMek6qpkBrtSHkL94RPzTugYp+NOC2tMxGgKs0OdtfR7UFUt4p3za9Irl6pW3+U5cYxESuxWqcJStw5KcLsJCbbS767YmrNVQJ4TF/84i4qQjP0wNhPwY0Y2x0mNBMJ9GnKOGZfqmpC+UNaC6bMFYnE7Yf8yI/cqbCHHECQE0CMSsAZnXdAdAdxl8dcOjRKhdnD1O6+FsjJD+85xc+Mya7ie8bpd1OkkrqOX70/XOQCJzsgkdNPUJJtnXIlkdt9ZkE28A1TpvbTfblLa7CJWf9zAPYrkSKIcD21Vt2doCtzjR3cHAcnxRgsl1pFo2KxgPz5ImNUnv+faw2jzDc8Xct1RInWwdI8fm8q5U/QL06aWwcUxqvQJGBK5ZFSLwP9v9CeITWUHqPMVXGNew1aLxvjAo6ArnAJIqvRIP9HIRKdUlIZATpFP7IX48KB+cry6CQ9]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Va9
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9VeZ 
+
+数据插入成功。
+抓取结果 [{'msgid': '4WnNF3C9jTH6ovxk2fvuhzGoYw68u1RiWJCvad24FXRz', 'send_time': 1743573246, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAH3jbI6zP8zZHR3aVS2Cx0w', 'welcome_code': 'WnDbQGkOc3VzZkFAIMc_j4ct2jjIEV6tfjZKAAEddSQ'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:54618 - "POST /?msg_signature=c17222a5c9657083c95ecb1408862223307cf3dc&timestamp=1743573246&nonce=1742751888 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[1Vak0+q+A8aKU8Hb54zjJNWeVwzoWqtopZR6hc67TSX2CyCvACh5XMPAEKW/ffJp/x/LbW/mdaN6OPMnpHJHrfX9UCYGb7Ai+6Bsz5+wzn9lwz19ro4cJv4anZYQGujtXpcQCzLDnGpp95xrQ0vf6jUNryEFpKRLYwsin+rBaTUFLusjAY+qVCGbI28tF8eM29sr2Z9bX3hCMvoFiQgZh8+GlDWyboPySg74NtCQrewHMI0FWS4/Ib49fAqUcte1B6FnA+YLtiOxr60bSqj5wkLDmbnSUBrgBQgkFYI7mhWwS1HnGhnbQcyzZQ3g/NxBPa3izY69xdxxe/qVQFG3Cd6k9CZh05O5ZdKwUeFIbRdeO+GRNo1kIePbIY4wotMgA4l6rJkb1/T1pzPOx72ssatN+m+G9Cyc3FbiQh/9xl4J8mWiFT3sB2Z3UbUrHEJO3jZUUAdvGryE1psXUJs3EombZKu+0sGq+GB0qGMPVg6lG4kWHrGXL3pefr48CCJ+]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9VeZ
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Viy 
+
+数据插入成功。
+抓取结果 [{'msgid': '4FEJ3S2NKdiPu75JNGFxo7E8YMFxpXhRpyet5PHCKVBp', 'send_time': 1743592358, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA', 'welcome_code': 'bFNEASHgvZvZu1UJBQfsODZaex6X-0YKuoCqtt376kA'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:45254 - "POST /?msg_signature=efb7c79c8292026096c47231c8b7cabe2fc81a0a&timestamp=1743592358&nonce=1742964267 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[gAUI3Z/Ah598FHhGSojz0DVBKWLBs/k40NUzOTIhNuEeIF/a4+aEGP6GZWJnohh1q+q9MU11hwdJg6mdFzdOliSOQQ0x3qol8VKo7MorNyXDwQOqa/RB+AN6IlS+9vRo1opnZMVIcD6Akk/XTNfnaOrLD1JLbI3R9nBv61QwPPXlmXkUogAl4zuOn86NFpblpwazQld8RJ4Qt2epNK9gYOt3otGwqNWuxpiPNht44gxmimiEs+sxf3l98DCqIAORUABPV4GYP+371fB2Rrx76jVXrI9IYF72BI1YICpEfNOVEfePKsWJ1ltlEFs5yBK8WmA57SKKf4/pr44Kewyweu8WYuWPkfWfG/H0r51beaBx88KaeJDnTjQsd0M3+EZLkRNzSp4lsn+JKoi5/83yv2I0VkgCvjWICrKWJxAfFqjijrjvXjSTzm46c2vUCjDlf1ZlYGrS2+i+ZhXajM+L4TXzqSIGArQmNTm0c5qqoTrlTIaEi7cvZwOyC1y7RmU7]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Viy
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9VoP 
+
+数据插入成功。
+抓取结果 [{'msgid': 'Ak6Hw4nCAyki535DxsfUng5cBJ', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA', 'send_time': 1743592365, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'Ak6Hw4nCAyki535DxsfUng5cBJ'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:45266 - "POST /?msg_signature=d64fd0c565a17a23d82b252785bf0ba1e8d491a4&timestamp=1743592365&nonce=1743392839 HTTP/1.0" 200 OK
+make传递的数据 你好呀！😊 很高兴和你聊天~有什么我可以帮你的吗？
+发送消息的客户信息: wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA {'content': '你好呀！😊 很高兴和你聊天~有什么我可以帮你的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'e2ca403f9b4fd5a5b986db80955d1474'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[H0/AUjV1U6e5j7kvMlauFlClVILxUrhNcqDxxSrG1UJ+4niwrudxgWLAY/K8m68ZeoBkrJFrQV2EluLquDU7ew8mtBXVDftP4rhnA/PYPskwKC20i6PUY+wO9zzj68kcNdDYN90/9fJf8DuU9Gr7Gx07gxxMxooN5T9IH0v8jwu4hr2C0xI9KFwcV/tGnRfW9Go/2DIMyj5NIgiGmc7LG2yXglEffo8UbpdUkt9Lyp8ZDosdv9RZbi0wXM8XmLbRbJ8eqeJSa5mGgQ0aZTTmLAiGhd6O+0/sWslj8/poSFJXqxg0JDcLs9AAuZuIPhUzowkm8oV6ZDGEso/5LSG+cS7p7Y8nJarTP3p79w62m26rFiSg0FfCtvXm81HGPtaVe16hNILfIIDBbdlheS0A1v5Oqf1RssLKWBJjBBs9pwoZIcXHTH8l8DQXekFYbJsUFLDgo62ul/9UKp9bsNa0VchWrht4qBz20kHhlUOYIjwmzL0QTpCDVCRrNRPOCzJI]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9VoP
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9W2d 
+
+数据插入成功。
+抓取结果 [{'msgid': 'A1HdEPjkrmhSqNysA2ZUW5H4vb', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA', 'send_time': 1743592409, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你回答我什么是狗'}}] 
+
+发送消息的客户信息: wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'A1HdEPjkrmhSqNysA2ZUW5H4vb'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:45314 - "POST /?msg_signature=6e802ff87e09720afe902396eb5d97fe329aa398&timestamp=1743592409&nonce=1742994644 HTTP/1.0" 200 OK
+make传递的数据 狗是一种常见的家养哺乳动物，属于犬科动物，学名为Canis lupus familiaris。它们是人类最早驯化的动物之一，已有数千年的历史。狗通常忠诚、聪明，并且能够与人类建立深厚的情感联系。它们有多种品种，体型、毛色、性格各异，可以用于看家护院、导盲、搜救、陪伴等多种用途。狗也被称为“人类最好的朋友”。
+发送消息的客户信息: wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA {'content': '狗是一种常见的家养哺乳动物，属于犬科动物，学名为Canis lupus familiaris。它们是人类最早驯化的动物之一，已有数千年的历史。狗通常忠诚、聪明，并且能够与人类建立深厚的情感联系。它们有多种品种，体型、毛色、性格各异，可以用于看家护院、导盲、搜救、陪伴等多种用途。狗也被称为“人类最好的朋友”。'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'a0363e65bbf1be3ee85782a1f653aa63'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[hFFSE98gsQvumEzuOB0RyDxFR7z/t8VFURER1YSK6l+6MiyTKJCQZjo+ZRV11YDzsIJGJNlcNwckso1Hn4Q+VY71znIOQ8DQOYecHPysUtDahVfp7Yh+Z1HKpzt2pvapxwiWD6Vy30CBsYZSWbFhtlsXW3thv1XcXr39hlQj6KWG/deGVuTnTayurgTc9zAKt+6U/17fjvFfwUG8KAAn+XIXC67KfCm/4DIyChz3jGv7JTbH5zgtJRBevjbWEehVMlizBSjDUtb4H2ymvE7ONbnGBBu6As9E8DXrUnDuSyTYUeptu3HtbVeZJnirkeVFVu8fckHarUlrONQd62qMlBZerx2tyBDXlbPvDwpMWXXwKzQE9iWWOEL3wGDDT+R9jrX/MaYKpWTkrTtkWTCKBYUPjjhXGwlA4satiePCZLEnl2nM4qcVTsYgkQqKEGifNl2U9qu758Guj1jmLmKyg+m4c1cIth4qs8bguAeMIbFmd8rAI3f1p+SuSK3/RZf1]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9W2d
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9WFs 
+
+数据插入成功。
+抓取结果 [{'msgid': 'BHpbkLMVYb3UJZi3z2RB6Eif9x', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA', 'send_time': 1743592454, 'origin': 3, 'msgtype': 'text', 'text': {'content': '狗和猫谁是人类最好的朋友'}}] 
+
+发送消息的客户信息: wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'BHpbkLMVYb3UJZi3z2RB6Eif9x'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:45356 - "POST /?msg_signature=b5b80f611b29a108d731761565601e4bb3ec725d&timestamp=1743592454&nonce=1743339480 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 这个问题其实没有标准答案，主要取决于个人喜好和需求呢~ (◕ᴗ◕✿)
+
+狗狗通常被认为是"人类最忠诚的朋友"，因为它们：
+1. 对主人极度忠诚
+2. 容易训练，能完成很多任务
+3. 会主动保护主人
+
+而猫咪也有很多优点：
+1. 独立性强，适合忙碌的人
+2. 爱干净，不需要遛
+3. 撸猫能减压，呼噜声很治愈
+
+其实不管是汪星人还是喵星人，能给我们带来快乐和陪伴的就是最好的朋友！你更喜欢哪种小可爱呢？(ฅ´ω`ฅ)
+发送消息的客户信息: wmSpxwCAAAv9U7bOsaSZloQdFhwkPUZA {'content': '这个问题其实没有标准答案，主要取决于个人喜好和需求呢~ (◕ᴗ◕✿)\n\n狗狗通常被认为是"人类最忠诚的朋友"，因为它们：\n1. 对主人极度忠诚\n2. 容易训练，能完成很多任务\n3. 会主动保护主人\n\n而猫咪也有很多优点：\n1. 独立性强，适合忙碌的人\n2. 爱干净，不需要遛\n3. 撸猫能减压，呼噜声很治愈\n\n其实不管是汪星人还是喵星人，能给我们带来快乐和陪伴的就是最好的朋友！你更喜欢哪种小可爱呢？(ฅ´ω`ฅ)'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'df803407c6aed1f3271f0b497cffe4dd'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[PA7ri28652alYNqaAsMz27OnLYN5KpVRsEfl9jd7EhwtUR8on/vMnDPhEj2FWa8va3pUnH/ynqX0iix/6uMA7+CaDZp1shAlqQ2iS+veE0++O6ne8gQa5ff9A2yhk4A0xfz+U0w1Lk4S766lJjYBtu8X+gHheTHnK4Gzl4wn31pSRD9vzArCLJ/2xinJZExcqG+xdnmmmskyVkOCfzras72B1v3uGH6pEtHRWJ4HmK4FN68CYaHxua5Pg9hFoxRrGxN0HtbSQJRdWktcYdHCKLCjCjgAGGmxJo/vHobHjZTf6+m5AgOwjzJSj3c8Ec1P5h839rskAYztLh8BoGSxZvJkChc6udVgh7nLn9g/DzYwfzJKTN6bMHncvzTlhDM/FfgWrtZ+k+Xwp6C7Zv0iWC6KXN52/JUKG7mB9fgX6px1dR0ed2mszqYLCM5CriuD0FEA/UWwKlSRBnWmNp3GLGirzIYhv0KS9n0/W6vgJDgcFRhnmQIpgTfX/e8VVjUf]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9WFs
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9WV7 
+
+数据插入成功。
+抓取结果 [{'msgid': '4Wq2L5ofBAqJRmc7A5GjTQ9JvniSyU7Gn8jjQp5cB8fa', 'send_time': 1743608237, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAoOvkVSk78Rgc7nQ6GRWXhA', 'welcome_code': 'jmJWqiK4lqV3XTtBjl0xmHz1ZNe_p8nesWxvaHsLJno'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:60886 - "POST /?msg_signature=82175f6c9fa9f9e9a149a9f9b1e3cdfdda2598a6&timestamp=1743608238&nonce=1743539657 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[qn6JS3Isg1bPsqxNeS4RP9yBNOUQq+7Hii7AFnreijTeNVA7DWssO4wQSStmOwPyvDf4xv3hzWv7xMU+Og+foC2UP7ZFXQh3j8hOqQh8eEaWOraOB1/50rBJYL4Gxa2Yiub6VyAWOcNGdxaZ7zHx8QO9BQzBC7Bb1uAjuUG2KqPQufjAuhP+ySn0wFhFts8QEJqNo671kRvWbhALp/nDLiuG0nL1aW0nGbYKQfEWNb1eiWNGyPvUahiA3FmDsmQQqHYtd2kumTNXI4S/Rd3pdTeAEQDajVwv8SImgtmxAQCeBGnJfG+Dye/x3XuZ76z0ANJgdbgp2MYK+xG7HHhHJvvaC5FM5D1EUrr84dGv2Taoy/aezlEC6t4KIZMr29MpkqdupeXAKVGKGtOnEakJ9zg5CAqIuAe0nIafsXU5fD2U0ZvrfIOVyTWF2RgBWEsFGG1hCxdEjE4awtQnPhZOJ0mcSHfHO0Chr1khFR+ObB2pe37PxvMlnVd9yxJJVdEr]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9WV7
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9WZX 
+
+数据插入成功。
+抓取结果 [{'msgid': '4Ph95UuAWJggC6e1wzFKQ8cZq69GvwNzjo3DsUswUSK4', 'send_time': 1743644922, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAADi-60n-w2OBM_ujw8bUfkg', 'welcome_code': 'wSnmDPVMYbQX3GL-2l-dwGET3mUb9tlQPTR16ZWIlJA'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:40556 - "POST /?msg_signature=f4e94000b55cb83c32b3f66b1aa744b344ee9dcf&timestamp=1743644922&nonce=1743498675 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[MAIXQL/ievTc24rlroUKA8HfpyfI54xLlIl4Aqctc5r3aOzBPxxhpCHkEivLaBSwndqhQFn/xsplvWUXFYKpoySLx32cpPZBmFSnzcaunf+a7TsHgG39db5g4LjwNYwFW47zEufOlmXwhT6YN+99SRm5fd9Jf+2It2qX34XQziGP2rn++FZDjmYFOE1d1Jz34+M9QkzZyh4tc1h+YaoleVjNVfopUT9R8b1dbvIqxlEhAsDdaKRIIeB83jy5r1RkzkExynJz2OTN0UvE4U4DIwZ9ookRxaxaJzRn47HIDLMaYEx+3p3k9vdLLm9dkXc8HPq/AuzcF8ne8P8Kr0zfdzVjek+2Pxrg5bnnDihepEwhzSrSycWZX9m9YOX1C6+tVkxEbDSLB+tNwoF7n3Q9cW3+rhc6eq+ztN88n+K9QjmXbzZMAugU/kIq5EyHGbxVCgeMNhNorJCsmS2vuVoD/i2wPFY5Us7/N+2WkhB6JTwbiddnAhWn1ANI/oCJ3Sm1]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9WZX
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Wdw 
+
+数据插入成功。
+抓取结果 [{'msgid': '4ag3r616R84nFxFH762NJ8PE94WKcjpGNR3Rr92bi6PC', 'send_time': 1743644976, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAZYOmnSO1GIRqTU2uUMhWGA', 'welcome_code': 'oKunPqAGj0CjmQV2OBnP4PU6GznDtrdo_qSZoDSdEgc'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:40612 - "POST /?msg_signature=a6f2da670308a81229722a86f7a2ccacf692db05&timestamp=1743644976&nonce=1743485755 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ZChPANIZPttx1czOFbyt2ZCYlP84Qgn6H0OFB1iVg8MpPKh2fy5frGOFAOWuQE1eJT4AKlAfsqyVMNglnTVPA5GrDglsLY/zh0OSLcwUr/BovWN2PLt2KHIMLR+Tf5V8nWiuVMF4S3wRnqY8AAX+vivTwxA75i/Q5tRthgWWbkyb8aGbvNomVeQOQ6MSSUZnb+0B3nG22ZeWZPbVkH5RzbxxU2H2ASqh2rNes7QVBBBkMoNeqVMCFA8+yHIGFkJo2/+YGpop6RpbDaV3TyJVo2NICPYwucGE9e3o6mRj78dd/ewbHxbl7Fjd45The91fGV580MB9fAyTVbdMGmlJw6DoqSLILW2HFZG6H1x19KPH8OEkIwlivLZ49UV6ggDfb3sqgH3BmjSghmnzCbIq7zCAxq7GSOMygfrlyM6V4U4TJz2m2c9XfmEkji86d3MNLJJ3SBq0Eme4tl6Akj6eunmw5+1tZA/FwQr23g9LLZaUExlpsCAi4Xv3WykYumL/]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Wdw
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9WiM 
+
+数据插入成功。
+抓取结果 [{'msgid': '4oAPrw83xrnMpj24LgLoVykhaUwpkzuTNf66ePxPUpph', 'send_time': 1743645495, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAGxnVndODKWS9K5z0b7WyQA', 'welcome_code': 'rCfaeGO_L_mFBU6hrw79Yn5_Mho9a-BMH7PGzCDHwoM'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41140 - "POST /?msg_signature=013442087776930b8a8f77e42b8602c624f9e83d&timestamp=1743645495&nonce=1743372615 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ubyMu8QCcCVe9u5FvGZHZtxx4tIRIsjsJcIkBL/wqYvepmrRO+xWkpMlhvB+CE71HcWnBbSxszKajg7sKv4CkRMGgZXckn52jvH0lp/DIyAMLadJa4rDvtOZff8yY2ov7ZGTLVsrdJW3bfHO3c03BTZ8J+kKDD0fvJGPd+tD2xCgustESSND58xGxYVGO+XBZutp0PqPlG/SASHZXmyoZNgNXf4vXTWREAB7oMDzL/wtxSGptEH84LLJAbZQTraIq3FFxqguglNZ3yQ4upU3hsr//PtvtTARb/2b8weL1L4zDT3D16yfHYbpCUbewEMDiusoxn9YruK/HBEMAQTCfGN8/w1Phln722CMuc4l+cKn0NwXfzM0VkArCoznv7YI3v4KE+ao8MTreNAam4gh3zu5KTPabJ03EbH9y71Wj1V4IdciMjmYW77CcfJ+K/pyhWbaI3ew0L7PyAmKPb+rOHtcg3JznQprY4jsCYm1yQgEqtbCL3itXhY69OHjezuc]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9WiM
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Wnm 
+
+数据插入成功。
+抓取结果 [{'msgid': '7sw1BJHEUPPpXoHRb9EDbooUK2YtDAnW4mzqyaJb36sD', 'send_time': 1743645572, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAbGdVjfEKptOpc7MpKeuaRw', 'welcome_code': 'YMgUUAxZG_HrJQ3NCVyJ1f9az-8E6oI1MC2F0kKToIc'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41220 - "POST /?msg_signature=aeb9c9021171f345006a019ebf885d522c118050&timestamp=1743645572&nonce=1743072526 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[NNEYF99tgNgs6lKE0/mMig1e8XPKYVpqdW69s7nYdnFm8ZkBUOY/YDXbb4QHI0A/p7N9Iz/fDDnadpuPVnlSgc3+Q/+OO2AFWj6RgOAPx4CIrUOalAFrOa7snCpJ3kKUoli6Y0qX7UIMjc5KlpSRJIpanKULL+KzHM+SGjr3xloRwuoeDkW4K13DHPJXg19ERwi+N9HuGzbr6sIi6wSaRrI5K/RrgEMlIZDsmyD1yB2aFq0QB6h9OkxcxdWvQTrmjy9M76q9zh5But6eeQLbq1cZ2DOnHe9IBA/+kGEpj9KoyJe5knvHz8xeObYRNN7cN9FmRr/6AurHLiAwHJVHo9GqkxMtQUXfyr3jNdl6WvhXAV+VoCtPv50w0Mq4Wia3gjJxgHVu41v1WSOhb4DHoP2krqHcqUNLG6H4jcoMoXwQr798xRYGuvV1aJyFZiwyIfkTLZLGaRUKOcHg39ODEuIKLIthfv6qAd5RGsBuQUpQDL+RF/baqA7A0svEvv3g]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Wnm
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9WsB 
+
+数据插入成功。
+抓取结果 [{'msgid': '3CyP9ezYuUFVaj51432mC6tDQ', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAbGdVjfEKptOpc7MpKeuaRw', 'send_time': 1743645580, 'origin': 3, 'msgtype': 'text', 'text': {'content': '任务'}}] 
+
+发送消息的客户信息: wmSpxwCAAAbGdVjfEKptOpc7MpKeuaRw {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '3CyP9ezYuUFVaj51432mC6tDQ'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:41232 - "POST /?msg_signature=72fa0df053f3b6e40996e0718e35046fe7e928fc&timestamp=1743645580&nonce=1743394215 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好！我是一个微信聊天机器人，很高兴为你服务。请问有什么可以帮你的吗？你可以告诉我具体的任务内容，我会尽力协助你完成。
+发送消息的客户信息: wmSpxwCAAAbGdVjfEKptOpc7MpKeuaRw {'content': '你好！我是一个微信聊天机器人，很高兴为你服务。请问有什么可以帮你的吗？你可以告诉我具体的任务内容，我会尽力协助你完成。'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'cecf518d3c814fd778bf43a999715fec'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[SvDkS8Q6IY2E9WG+Z6HGtw8CLFI9fOKW0QVyWeSnwZGGXmMHKanFeyYvpDb8eoZqh8jO6Q17sZ8UCXUghFw1rej8B9xvNbBdqNv59QThUblsWlMdVjKU0KusdpduGSiGU3jCkpWDhjrQ/+28he+qjsZNQOdSfleE4qmoEIPgFbcXP7FrH0EYeR5HdMNb6dPhvm2sB7ETpAfUn9+dIr2uhPBh0fK3NJNX5VNktyCtUNLPapsp+YTCFGM3UOZ7bSGjgAzhHr5H4+gys/ppr+MNgNn0FYgC/4yReLrhfDy0OKcqsOz8WvfvwTNuoSjOICw5xtmHLAF5tikz3kooApHwOtBzuOZ6C/xk8YepS0RelXVNI7LL4Qmb9s0bjh6gLg28N0aUS6j/pW4zUkmQWkz30t0Zq1p2oC4zH0bECoDdRQUNIvxHXL2BsVIXGpt9NMContZjxhcIp9k0DMCjjLKhNO12J3F5eLT9SxVja7EviffMTopfuloPy1uL7t7liTfO]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9WsB
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9X6R 
+
+数据插入成功。
+抓取结果 [{'msgid': '7gK4D9A35bYqDnPkW7CVJUeDw2nNQp44L6CiPteLCRTh', 'send_time': 1743645607, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAJk-nWGNp3iAkF2V5p7PdXw', 'welcome_code': 'pFz8dPlnkPKhHB6uJJSgfqSEzEZm9fZE70fI0ERVrio'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41264 - "POST /?msg_signature=be6e40bc6c3dfc8ef4cdc3299ff1db6a1bbbd5a4&timestamp=1743645607&nonce=1743532044 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[O1HHQ013Bbih1WF2ETZwUzHMlIkDlRqL72y6/9XHDxaszf2HqwTfXcSKhZdWTHU/eoksHJIipiUMa2T6noSSg47bcn+2z+eNkpeqwbk9BpUjktQPbCrUjvQZsQc62Dx+z68hCSfBAAm8SHXo/9W8nyWoWh+cDDtFTISSS8DrZBk6yejK4Bm+pytwQIMwiauOkDM7deYyGHfnQq/5CwYCEPbjT19KSiiK7iWXMntU9vmS+l06YdU9/azZt9y/y4fBf/VDKP8bOQ6RtJim3ynQV2QGdCPPCUZNjLa2pqEK+dv1l73q1fLc2RGoYzVwolaW8EV+WWg6w8WwbnjU+H+7HsMEChJKXVKrL8xZ25ghXun5/A13jsCv/qn6CFbLVuOWzr5mBuEYqrBlXpwypIw1WEWPX1XXjFxjDRgBzv9UefwnuWFRv27dHuuMWskm20dT5tgCAZdOYN/R8TWFz3SGP2ndaqq5tsR/5V7CBMgunjptGK8QfzPBXwcgg69iAeTD]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9X6R
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9MRt 
+
+数据插入成功。
+抓取结果 [{'msgid': '4o8U41qk2Pqb3S81Ue5uLosUdyFivdho2hDxCQ4UAAWd', 'send_time': 1743645713, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAADi-60n-w2OBM_ujw8bUfkg', 'welcome_code': 'OyW7eJe9lkp6aOllMaCRFZoe1kINPy0QTEt3aE9G99E'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41370 - "POST /?msg_signature=d124a49a574c426c020b9a5d3cf92da974e79a6f&timestamp=1743645713&nonce=1743292775 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[5HtZbi3qPqPpJYwd0CBgfvMcA1HSFzwYlKMG+2i4LAt+0JArQkTeRiXnxChRjA1ovzfETCDnN4k8KlRzGeMXyxWWNd7xISJwTlzSUOxiQRzCnU217lKAKPg0QwdH7pIqAtxI1vwv6zwPzYpFEXmMDRCEFVoiJ5JpHSPMfnGLFsUX7oUPN6aW6uVsibVxkyaBc4ET+3EHFlRXpDypGcPDkwNF1pZXWCtbFH9z0SxbmslwkhPGOWeWnFV8vjmrrdX7qIXn61txvtMd8uAlNZJgskc2GwoRE8pv9tM2hlyVOE98a/od/E+G9LumZ+DLKFpPbu+LP0MKcFsiWQHTwnP/sXse63h3SRF6JjPwgg7sLOa5d7UCUjRZZogM0jse9jJ4r94qHHbMtUpVXF3qgOFoyCfHzZIdSWuho1MBNllL7gzXHWC+AN0624Nog8u3Gphzo0vv/Mu4pqWFDxGKNVeU9V2adX3wbt7pbieuaptu6BC3gC/FJSYj+9etn+9T9g11]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9MRt
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9MWJ 
+
+数据插入成功。
+抓取结果 [{'msgid': '4o9KiBbEKHsctqBL5KNnWTvAYiRkru4vosCL1wURTvuz', 'send_time': 1743645753, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAA9YErXOm339hI41tE5usGpg', 'welcome_code': 'eBG5aJPSTtqOKESOal9DZVcLqFKb-Cai6-rfqPNoghw'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41422 - "POST /?msg_signature=61f8c571c27f23cff99a9025eec50940697d655d&timestamp=1743645753&nonce=1743664015 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[rdZfKuRQQg+lfdlbXny+jfQR5yElOmLerOq5Ez7j1/mj30a4xXLKOBj/oVNgS/uHCWdKzPOOZjqqFTVIV2fjUHe5lwQ8PtnTcm8k2LJypWswSm1r3ByUCeQqxU2pBEfnHbraD6+BAlLkpWIepCvzxM9OItbzvhNMdFZX6UH3FlEbdGdpe0PuXl7AnqUXHK9bT9sYtshUOXK38kOGNZ1gytqqTCs5NJhMR/9qe/jtBTexJ50z8MTn1Azgeg04yoGCXDEDbNlgQIWfyNmN5yIX9qeSF1PtTmPxCqlhCVeP11Rc+jiPT3V9iDt85fNB2cEf3OSrNXuuSZlu4n2vxQlNg9QEOOeE1gYE3LRwaOCJ8Ox4dn+hCo7N8jDr5CaXDToNfZ5EA2vGclYTY5LSjPvDl6Up2VUUsSDcMUrg22wcvk+ZwL5fhEfqsHmpR+skVMlGrVbf+c8zZ/fc2ieU+e0kyzRu/6ygKvo1QvvTKBLS3yWTqqOfqnQv9IwEzLrL1YGf]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9MWJ
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Mai 
+
+数据插入成功。
+抓取结果 [{'msgid': 'ANrah94xr8rmkYWBaHSAouEZgP', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAA9YErXOm339hI41tE5usGpg', 'send_time': 1743645757, 'origin': 3, 'msgtype': 'text', 'text': {'content': 'hello'}}] 
+
+发送消息的客户信息: wmSpxwCAAA9YErXOm339hI41tE5usGpg {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'ANrah94xr8rmkYWBaHSAouEZgP'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:41430 - "POST /?msg_signature=2898d4eebb38dfd7dc2db5ca2687d3fc691feb93&timestamp=1743645757&nonce=1742814563 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 Hi there! 👋 How can I assist you today? 😊
+发送消息的客户信息: wmSpxwCAAA9YErXOm339hI41tE5usGpg {'content': 'Hi there! 👋 How can I assist you today? 😊'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'b5c787f9f8190dbcb65279102ea6c6dd'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[uZmO+YNxcXJu3DbmELBtJr1j6GciiX+4cjYlLMbHzpjw8VNfhe6xnkOlVpOtWve4ecCpXZ4FN/2UtOvzDL2qWzP8+Jl1h0d4phQevODzJxS6ejPh30ra/CJwcYdpajqiByxL4IVYSa/sr75d3RwT1oAn1HlRLJt+mmK6Aa9PbhLH7Ji1SqKGnP7bYv2mwYJAs8j5dfImXZX3CWU4eoArOeQl6Ry2k2jzsGdr/zEfCuEZRJspiYEFQVemxcwYzNJKSmQcl6MYEha3JGYMRr3GJXI2FBZe7wn/Arqe/PWaZqrOtQiqmWRs8EtJDoE/BonqAAfIutlaamqVYq8oCyc0IuW4mntL6ZPJ1oGPg3HDZLc3/SUhPxTWA0eZYkcAgk4LA++LK/aP/C/0c8G/hvZaDnAddtSDan6cyPNWFUGxMPhZbkhevD69epICOJJUns9Ba8Of/nAiuAyo9sjnJxPwDnMD+kzledN/jw4WUrbO3EfamCwYvTAV3PwG9FF7zebi]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Mai
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Mox 
+
+数据插入成功。
+抓取结果 [{'msgid': '4FtKnQBZZ7xLuPGxQXoopX5wPsW8bNF2NcTexCGNs7Gw', 'send_time': 1743645801, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAaabLgsPBZrkGMS73DXJa1w', 'welcome_code': 'Fxc1ZMp9nlDQqX5EWKIUVx3m2bqPc_2I3IzMsatab_Y'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41484 - "POST /?msg_signature=daaed280aa88f8a32c2586721141828885137e3a&timestamp=1743645801&nonce=1743127234 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[kSpDgCSg/ISKhWswam7ruH2WjXEBrD6CEeT6eSRh3r6ukZof7JKxHfAV515Le0xvCI9UREzjbnGxPRr8J4z3cHdY08DPnfR63vSxr1ZNQmc6cspnd38lt89Wdvbejm0F69JGJcapNb3Ye9oRNsJkQe4X91hL0nXiJESQP17sLHNuHbJ04Muyw6PTBAtNfARX+6HmdUFYkYngZcwvr4/OCEQUNCBx3Qkhr8hFIENYt/22kv+YvzMDZwaip/3NtnV55HW6cc6E+zJFGLgGBVV8ILt9Xz9PdZk0d5yoEvesP3peFCkHK8HV36zUW+QW8CRP3CsA01COZJU78XConbztsTnS/g5ogg2zV6Os0BnulBBmRzW7Yu5LrqWFkvjiPakxBpzx6a3JSIToARYYKeU2S3Ez6KBOXx2f37oxRZW1UDddnvFoEIbAPsajh1NPESGJPLdtMluIxj4tt3YotbYZlS9i3Jshh3NSFtMVFwl2UeJ3l34Gp6DqzGoNFGf077HJ]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Mox
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9MtN 
+
+数据插入成功。
+抓取结果 [{'msgid': 'Avkc5SK6CC69UYCvBNw1tBkGg7', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAaabLgsPBZrkGMS73DXJa1w', 'send_time': 1743645809, 'origin': 3, 'msgtype': 'text', 'text': {'content': '今天星期几'}}] 
+
+发送消息的客户信息: wmSpxwCAAAaabLgsPBZrkGMS73DXJa1w {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'Avkc5SK6CC69UYCvBNw1tBkGg7'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:41494 - "POST /?msg_signature=08319724a15c1daf09937dc3450e741ae9455907&timestamp=1743645809&nonce=1743773299 HTTP/1.0" 200 OK
+Process error: _test_make() missing 2 required positional arguments: 'open_kfid' and 'option'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 137, in _handle_text_msg
+    asyncio.ensure_future(_test_make(name, content))
+TypeError: _test_make() missing 2 required positional arguments: 'open_kfid' and 'option'
+make传递的数据 今天是2023年11月16日，星期四。需要我帮你规划今天的日程安排吗？ 😊
+发送消息的客户信息: wmSpxwCAAAaabLgsPBZrkGMS73DXJa1w {'content': '今天是2023年11月16日，星期四。需要我帮你规划今天的日程安排吗？ 😊'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'cfaf573b2346ea96aa9d1dfb8a657425'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[wAbMa3L3LEEHo8lnkNyjzZvgsMQyJrzaZ8xfnpTbiRMMuqGsc2vq7deHyguTlojfUj5O56VlOg0sXZUuIa0sCfBaTTBvP8zo138XcK4F6gsoI0Af2GyEGENoaumX3uphcxPUTeS+poYPPxEuIeAoEPWjYU7ftQ25tSdSRDEgM/jzLQvVJ42U8KLFVzK4SmszRn//V1mn8SoqAuoz4UpdzGl7XKerOLOcLzUxA/EeVR7uNr+gQCn95NZA18XMmGI4vHXCegC1fkUpusA0jxcmIKrC/tyiIOvfwTs07lZCdcamgmiD/zk/WGh9iT9KjLl+YPMZglNLybPpbiYHUsootD8aw3+beqXsMh6bZeVJSv9usw4au1gjSjYJU4gv2mJW2dgmEVEfY8UVwIdbhqWP99WmY6Khis3HIsoMeoBIjuBSmL4vDEGus1C3Oyeo05VYEPTfkPASDYv7TPHsTrp9hQ==]]></Encrypt><AgentID><![CDATA[1000005]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_text_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+name: zhangming 
+
+wechat_callback->response: -1 Server error: _test_make() missing 2 required positional arguments: 'open_kfid' and 'option' 
+
+INFO:     127.0.0.1:41912 - "POST /?msg_signature=21b2810bc4f4663a42e4a2d02821030092ea1c28&timestamp=1743646188&nonce=1743145484 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[fRUPS++IZmXGgVwcP/JCmI7+BISssdZFNKPpT7N9aS1L5dyDt1KYECsrEoFXgDbx9b4qUHL7xk3bE+4KGpxaAtQ7A4KO2ga3TjlHo2mSPPWWU8IMZzyzZwvbytL2kM1RZ/3Th6yRZ3eHlLhzO2Un4+nFyLSYi++HUSgsusjmzggmSlPr6OAOlrtp8DewqK7bzzWQKaBXZXxiw4jFPHQcgda9pl1opUykBZRfIpB/8bELnjpI1nYCNOZA9LuseGgws5KXeHgrUMNZIiZMv6ipzGYpLkHYFUYOcF+scb5kdMVcFMmLU9o63o7tdCgm6wDAvPw9TBEKkfZFNcEsDM4WY1TXrfDXwPwbI+C37rLiFaDmFmTNT51G1H8pvi/zpRQrb9WlLRqIGhNfms+zs/aJVSjiWdy0+TD1HuLK5sFXFaf5rBWlOUuKrpdcva3x3X2hk0xYZ9tdcBUNln+EWHVxzHj142lL0vSJVtIZ+/Ppc195wPt/Sg9BKf8ufO9PGgFI]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9MtN
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9N7c 
+
+数据插入成功。
+抓取结果 [{'msgid': '4jD9ftx2W6QSALh6zALhxQsACo44wk3LoJZGcHHTD2hr', 'send_time': 1743646274, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': 'vWqhVGTyg2AhNTj2z0AfZizow91MbZdeMugaarSpyfA'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:41998 - "POST /?msg_signature=c1357a319f8f25d792680a19a2d0ce47f14927ec&timestamp=1743646274&nonce=1743428548 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[DisiP1lywYk5Qhql+uuGC7WcE99/GG39JFZ205/ClgeHCpCJSRPzbWV/8+xhsFSLmGk4Pg/eApRKBhdbRfszwo2/WgGWEMuS0ZZ1Ekd4IZx4G+2ew+TSXcLyg0/SoV1T5G9gViazKnDqh/EQq7TSkffWmP55A0KVOeQgQHWEl1W167OzHZjaLS+SD2tATDitrrH60dPnZaz66x+D3nS9rBOyIdSD489WPy8fxgfz7g0R1LnIpkWNvly4aH6ZSMEuH8h8bRGbBRor8/WLv+k907Z8cTY2VNdSiw47mC9CsBVhclk+QylIbC7uyx5wjVbJyonhKDkWCSHVLu8Eg4BroWkb3JoCcgHc2+aP3B8+mKFKNKzAgqdYDpps98NIyACxdS5AHl0tISGCY1C4ocOV8Noinu5EaD1W2zKPPITHfZowc3/Vf3M0WwKg07rBiny9dLg5SCvaw/lrW+8gU76xGHu0qlykadEEF16+FgqI3rdwBBQC2rJgJrFXY5drWbUr]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9N7c
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9NC2 
+
+数据插入成功。
+抓取结果 [{'msgid': 'ACCNYkU1jAHpyCDXGQi2wtD2RJ', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'send_time': 1743646279, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'ACCNYkU1jAHpyCDXGQi2wtD2RJ'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:42012 - "POST /?msg_signature=6af98599f33c4205326377a11f02a04951a67594&timestamp=1743646279&nonce=1743294012 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好！很高兴和你聊天！有什么我可以帮你的吗？😊
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '你好！很高兴和你聊天！有什么我可以帮你的吗？😊'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '299eb6bd7368b82049181b69a19eb7cc'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[kkFjC3p+UkD2kEZj0rYDHb/p/oMw0MH6FnLkfYBAaep2hXxxtS+f+TC+tDQ5YIpe5qWng9RuaEDIrO6OK+s2HEZ5NGUuZqDaOehpAp7B5EmHooPuzcfucUqzPmpOcnozkrus6rPahVHGId0/bUNE4vvEFyrfwCc4+cbde84fZfNV24xvbjxAg0dVIoiDaCl6gOnFTOt7+iLLKJMUJrxgxrpYyT76gsFUNN5+cMB4o1zHNpJ6Jo7cJt+uwvKdgWNn0cFwrUhtORB3KWe9RJtDO8qUCgQZxfPPiSMh+rHtzLjZOkGZUzP/5nZmGjved7dYiMQwouPMx4lFQKCT8xWNaJXaxGyAa3XWrhmYJ2Wo7Ty9fG6sLsUSNBZ7vyIl18Vk+oM87x3ztAUCQhPeLBzLaUjRebITCvOdquy62wnGjwQwnfiXv9B2Iz7O04Y9I4/V7KfOSn6FpxSKN2e1Wzt2fYF5ERY+YyGSTbqSDTiZCSfNTzyz7htKEvy4cK7jAXWW]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9NC2
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9NRG 
+
+数据插入成功。
+抓取结果 [{'msgid': '7pkKEidXYGUF3VowVHSnxrmY1j2hkwP3aZEJMVE3AUSK', 'send_time': 1743707589, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAsPY8xCvdVxXqf7NfQbyE8A', 'welcome_code': '6TF59UzMsYNcQ6R0Vx0d2h7cpFKbvdX2Joa9FzIHWeQ'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:52732 - "POST /?msg_signature=804a430b6c223e66f0b663b46c61a1acfe765bdd&timestamp=1743707589&nonce=1742774823 HTTP/1.0" 400 Bad Request
+INFO:     127.0.0.1:48762 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:48770 - "GET / HTTP/1.0" 422 Unprocessable Entity
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[dzBboIiPY7KcnYrx9X2BTyHhp9gPAAkLIa/TskLDrYuifFjABKFCxb1Cd9xLh87/Os/Jgz4ZyrMRrEsy5UqWMUVGvH8U6WliY/B8PC1yasLNJf1bRUAQUpv5W100V6NscbexQaSLVnXEG1DQxIECBPAHy1nm20QzSIOaDTZVrxPkDFsw2m+YZi+9Lk4a7i2UbCi4y06FA0bO29e7Yk3nEcc4D5hGtEfKqsLQjUnfjyD3do0aX+VTqH0JfjACUU0JKRH0BBEDllVJUbWFNktOIa8ZDjQn4vBAikUL86Oiw2SdpvTInto3/p4s6q/VHYtu9swcKbPHqhhrNnJ8/dQwb/vtGKgg0lH4NiwfkEj0Ej4AHLEuk6q3iW99KgiJetvB/ga/KGbIbi2L+XEdTbh74BGvU2rpEoVb+AtVsVg8/Y27EWfdUyASFwmiPvU1dv6ooc/ME6OHTK3AeTejlt2073BqCF3O5bxoOKS45coTJGMzmuri4nvOSYTinhTfapMi]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9NRG
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9NVg 
+
+数据插入成功。
+抓取结果 [{'msgid': '7kv9ej82fsmaGwaMMdLDFDNSrbXa6Pxkgr2QcW22HXPH', 'send_time': 1743737498, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': 'Gk2ZEVM8auHV9SrP27dCcmDbCI5yuPGDxWLsaef43go'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:54064 - "POST /?msg_signature=c6f39e9177f317a433630893a5a3fc1be8d46ce0&timestamp=1743737499&nonce=1743652297 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[Rp5dh+Cs2GcIXEp7Ne7hSObm53n8mTzOO7RMPsnfFwnh6zA3DpkFQ2DdRY3jJclAwOMn2Caf3PuNiqP57tJ4O9qPylCRKPR77aelUkP9YWfRBBMAAsGJ5hT8/S2jPYd4DFTz6SWIn2zbv+ot/AzuneSweKT+P8+nDKE/tC/M8qhrQeDPKpkA9iM89y0eJYDFEJwA8bxtuYA5nW01KWf/QBhTNzbhiv+rVcHYcV8W2F2LH01fOLsmof3egHSy7PF3NosNGVoxeWUfWlWwDzYWHF+k0ydk82rns1UPyaKCkn/8Ib3kvhg+6u0PIWbfvK2wT9ASV1F4/KbagKRaTZM+/xW+coPbvNLpIp7VMG+ZVbjz50BwiJ+pKNvnnFMhxlssQwLd0TnH6riE+4+4f8kvybS39rT+RcRVoO0ojOE0cPA02oQP6uAQFKdz+Ysn46KsXjOFLcLpXoF8789pHvvU9P00hq8AN2aq7DoQk3CD8pe0hsFJLroL1mzrsqLxuhZV]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9NVg
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Na6 
+
+数据插入成功。
+抓取结果 [{'msgid': '4s4oWC93F7vudjuky3gg7KMjSuDtbz3uyadzKEdxqjjN', 'send_time': 1743739036, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': 'EiNqLHHLlCuVhzN79bNEOoEUOBkMZLOauVg-glLifDI'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:55582 - "POST /?msg_signature=d5c99a168592613e6a1e866c8855251a8357a221&timestamp=1743739037&nonce=1743663698 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[neixmYh83G1cNoyETwr4cU/IJ/EbLGSSTjlStdsKk3DL2gspEGdf8jpveitOeRcnGbwfvSmQsT6WVls9EZEsij4lR18QTC+fhgV23U7thC/X/Ec4RJq8SOW8iDYiXlFp4bSXNq9tT0yw/YkjD/vQCUEAeX0W6A1aFMUA7/LQctr4PQYFefLfQcGgsHZM5J+oZAi7Jm1cbQca854pEDcnZO8Ksj36qxT51Y7AEm4pMcF1mwkX7SLfwaNKS1Oa0J2x7wDZ3vix0VNgJz43gYE8RF0AH+Td8SKfy3pb/rdFcYoQB2n4B+kFRnJ8pVRgCQbQx2+eUjXmi5FiQGmoFLw5VUH8mgDefij3TXcoO/vl5fOBNERLVDcR+AQ++X9AgMZPDXzocLfkvXgwq/767tKvkaHYpLMmmEZUsKBDHMgdtnl216Vul6gRX4bczwSQppCHdkBe6/OlTwQSbBn6RIEu1rnZ4ertvEc8URjOVBznYxn4jDPqJHnVaYBzmWVOXmLZ]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Na6
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9NeW 
+
+数据插入成功。
+抓取结果 [{'msgid': 'B77wMUC9kEyuKyBY1ckEnqV52f', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'send_time': 1743739043, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'B77wMUC9kEyuKyBY1ckEnqV52f'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:55594 - "POST /?msg_signature=bd28f46bbb65f558e5e59491f90539b3431b93c3&timestamp=1743739043&nonce=1743354240 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好呀！😊 有什么可以帮你的吗？
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '你好呀！😊 有什么可以帮你的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '93f8d56e306f8d3e5c83365d9907f986'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[AU/Qnxcb9rVIPiBLIIac97ploIanXdzvYakgfs/m7T1y69RpCNCGxh+0d9rjoGJWVhByV6uxswT7DWC6EQiI1cGdGj9y6WpnY4G5CdH+FV4zHbj0eDl8fbhdmJDEZq7b1rJoi5FJDc+BVRb+xQnL5gX5VG58yKmMAj4PPaFoWSK7YHfOijfyH/ddWUEzFfzPFzkrG7z6/Ts7jdeKIeo01JyNxWS/KpzNNRsQW6tZ5aRFdZLpnb1d2QqCJy0326yf8sJEt0OclqZfiqNieMiZJmrSatT1HDwIQMISl79jWXJaU/tQraBdwFwlFhElCgRbCxFs+rMeKeLxI7N15Zfm6Hi6YhdqoxvVQ1rLyOVS4eoFoVwgEt2/toWCZL++Zik+zxgYma7FSK6i4Cyq0DtdiYCEYCY36w/MPG99toNj+t9bmmdW5ljK5ECCraizXQaLiLi7Fgb0342LlIcTm4pwZiFgW16ltLg43FpzM+Yzz8sSx4m6D2PiT28DHNTs251G]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9NeW
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Nsk 
+
+数据插入成功。
+抓取结果 [{'msgid': '4o7akgkjLLQumqeafTtfTg3SiUXey2T41kAS7SAvfrnq', 'send_time': 1743758385, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAA8WdIXdTjlGnNfcJu67fKUQ', 'welcome_code': 'vhavsN85tnuBoREJzvSflwzDA3mz4V7Brh3k66ycHHw'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:46696 - "POST /?msg_signature=29d4089980f1515c727ca3f73e00642d513a8f86&timestamp=1743758385&nonce=1743514878 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[/NEYRBhqwk8VwQmnQexR9S7Em9Z4INXU6MSAK8ATtv1XOxxItJYG0hIm6OHLFKesO6wdHT25gDipmX93SXse4SfIkTqmejGvdelV8kgnURoHSwrHUlrXvwyM5YZeswOdoiwjLRg5LhbyBU0Sg7fEaeQi8LnSYhZAtrOoh7mm+3HUzu60KL+WP9b+YSFNorm8NTAl56ope2wAVGkiNtpBcLTMHaI8QnlLw9NDf/B4EHPl8vi0sdzUTI29+9tdZMnkC0q3t4SO6JzMm5iudYVe3MtKsFtMXZWSgiIBxypz6/+RiH7b9uPpQLAoOjkOVNQ80uBdcEvrS+oqdW1Jry4REkDab7kTQdwj1x3iBEgHj/T6cIZw5iWVW1+H4LlTXcdtiUoVIu0u4ER0Ypa0BP/3bJ+uS3Zvj/KiXcKL4Gtgstcw5B5AOcpkhTXerefn3bWdCSiUZr5NEb2saL6/SEl6q4AszNg9TllQcCVlomqsB/s+G2mpdAWx+fBvmFZDyM1H]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Nsk
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9NxA 
+
+数据插入成功。
+抓取结果 [{'msgid': '4PgFkP82Npd62fAMSVLHeFMDVkMTA4cVn2yVAcRuofrL', 'send_time': 1743759705, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAApjpYyPe3Wz_TmlJQsJ9JSQ', 'welcome_code': 'LioE_YplYad6KvrkYzI5N5uxNgXMa275McP6llMcU8g'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:48010 - "POST /?msg_signature=b8b54698bcfe590c38ec107907049c48911dd756&timestamp=1743759705&nonce=1743563967 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[s42e9vRUoQyUH4goF6IIvjHyZg2oCdrK+H2a9v6whob0fnXxGIMxoEizmgsr454K27PxaQD41+zruz1MCHAcpWkj/KrBPEWniEqGiKXGyffZjO3tNppfo78GtulUmV0RPLiTH/DjChxSzdj/Nn0xitf5ZuRFrR3MzSqVK3uG9X1+2NczmkaDKJwEg2n8bz4gPNm+MvAWATju/EWyHyt9ALnlVo81I4rhbOXTIbvGQOQNwY9DALnII9IhGKsAI4Suvfnhz7Gd9RBfaw3oBhOk9ubPsQVL5WRJpGfNNBg+cUm1qHFzoTNjjDViYWpNTvQP9PWG9KTLAuDLmQ3bFxBqzbiMZmt9LbzqWHDFte7BMIsxNt4Azn9jvnJNnLpVoHALD2I0qKbzHyVeVOhapuE4Y4RBnORpf+ZAEGIFWs9KNzNB357IOvIzCbYwAv+aQeLI0do1oDoTxx8lbJUMLMsumxsTTOHP3KE8zLWJxzjthmlNpCKp2+QuM+eZSrdA9pL+]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9NxA
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9P2a 
+
+数据插入成功。
+抓取结果 [{'msgid': '4Nv2mbsM1JjPDLbJrwDqkpyHNH17k2qJJanW4uR6cBGc', 'send_time': 1743827225, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg', 'welcome_code': 'NvHRlZPFTgPJ4lPz0jpcCx5yQhrCsVe1QJ0MOqszoRA'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:58168 - "POST /?msg_signature=6e262638b082dff2ff48238efb6842693d930450&timestamp=1743827225&nonce=1744546641 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[8CsN99Pj65jylfzQHjmAFU4khB8DyQ3+kjYio2YzDzo8/seqmkVVs6AYnVbNevFNKoHoe/h/xicSbcwuMbeodxcn59svT1xhzYcdUBKxkaMRxPmzV3eGUhx0iRJmN6sM/fmFzyjJ7CJhz3oHre4A7Blzv6boyUVtmRvlllG2hVJPvcGWg7MZnk8n/XiKt74sJ1ALuMC/rFc8WENfSJYbMrnbMj61lyCnJLZDYUkRq3/oq1ousOpUuL5S1JYSpNF2qGrfw0BsUzzurd+J/31b/i70bRiSMHVlYPEZHcyDyRfybETa0gH+qJcbUXI/XHdHH0CEEDF0OgHBVljT+v2fvifNhVkQXPD8mFPCLVAOMdEb+XipbZHAbkG84Ie7XNGH3ThQBfJ2j24f48cGWoPOZTG/+l9QRYilNgZt8NhSCOILQTTNQGDWvkYNUIBfMDlDxkHjK3ouKc5psRL9gHs7fAI1YyVkbZo85zagy1p2XO8THUP9IU9hR1ZDDLC+W+Ow]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9P2a
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9P6z 
+
+数据插入成功。
+抓取结果 [{'msgid': 'AvkbY59DP3k9f7hpowUc4Ywvrh', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg', 'send_time': 1743827359, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'AvkbY59DP3k9f7hpowUc4Ywvrh'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:58318 - "POST /?msg_signature=204d72afab6d502739f55952ae4a6c51645b4388&timestamp=1743827360&nonce=1743900535 HTTP/1.0" 200 OK
+make传递的数据 你好呀！😊 很高兴见到你～有什么可以帮你的吗？
+发送消息的客户信息: wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg {'content': '你好呀！😊 很高兴见到你～有什么可以帮你的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '48ccd26392ca5ee702eb170eba606b20'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[xtwmSygaFVIDP055n2wr7xNdtIORtYtHQJ3OcbE3oMDt/QB3dUSw7OM8DC8bT8T7TEmBlKipFs1y1mjiStQKlDJgM6V3JWk6vvN8fWM+JiVUcHU81JrEKYZEKKnHftr8kO9P1urMcHTuwOySL2r/ByAYIT1rQjmpdIXnbBvXRPdGyDWz8IHytZLWONy//OrvFZSXYyED5LJ01uf2hhGMKrKHXwqyUuJ24cN76GWdT/d0U+2zKt0VNcfmpjXfDdgucJ7RWM4Pxo0ovbldtMbDhKG/Bb8IPFUM4G+OyUUBNpk+F+cjlzXQcZmsDbW5L80vJbYntL0ku20+FeojMjpIT9Cu8NsU2Le4CElMskS6EkOkX4okz8MKSdyiAUyIFD+OmHM+LvlMUcbzkgTb/tVe2piZvs5JVW9inV5tjF5k1pIpstckcOyE1BDOvd+N4uQxNbawewf5F5qUo9TtIltWKr4vVN9o3nEHCHYveTy2pFSzemQUpq21BISAz9qc6Z73]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9P6z
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9PLE 
+
+数据插入成功。
+抓取结果 [{'msgid': 'ACEjtqjnUkw2ribKKcssZaRhrm', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg', 'send_time': 1743827389, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你都能做什么？'}}] 
+
+发送消息的客户信息: wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'ACEjtqjnUkw2ribKKcssZaRhrm'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:58354 - "POST /?msg_signature=a97bd52111ad48d07a7e877a386a8afdab3978db&timestamp=1743827389&nonce=1744327608 HTTP/1.0" 200 OK
+make传递的数据 你好呀！我是一个智能聊天机器人，可以陪你聊天、解答问题、提供各种小帮助。以下是我能做的一些事情：
+
+1. **聊天解闷** - 可以陪你闲聊、讲笑话、分享趣事
+2. **知识问答** - 科普知识、历史事件、科技资讯等
+3. **实用工具** - 天气查询、简单计算、翻译等
+4. **生活建议** - 美食推荐、旅行建议、生活小窍门
+5. **学习辅导** - 单词解释、作业帮助（简单的）
+6. **创意互动** - 写诗、编故事、取名建议等
+
+不过要注意：
+⚠️ 我不能访问实时网络
+⚠️ 医疗/法律等专业问题请咨询专业人士
+⚠️ 我的知识截止到2023年
+
+你想让我帮你做点什么呢？😊
+发送消息的客户信息: wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg {'content': '你好呀！我是一个智能聊天机器人，可以陪你聊天、解答问题、提供各种小帮助。以下是我能做的一些事情：\n\n1. **聊天解闷** - 可以陪你闲聊、讲笑话、分享趣事\n2. **知识问答** - 科普知识、历史事件、科技资讯等\n3. **实用工具** - 天气查询、简单计算、翻译等\n4. **生活建议** - 美食推荐、旅行建议、生活小窍门\n5. **学习辅导** - 单词解释、作业帮助（简单的）\n6. **创意互动** - 写诗、编故事、取名建议等\n\n不过要注意：\n⚠️ 我不能访问实时网络\n⚠️ 医疗/法律等专业问题请咨询专业人士\n⚠️ 我的知识截止到2023年\n\n你想让我帮你做点什么呢？😊'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '1d6a610a5dae5c66d194129256084c58'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[D7n3VB8MHfZGyYOHeGqcJZzV/We0S6VWPVNfIz7SqYLINHRWFBai1UtjOn8uIURHMr9XhW+0spteW1S+eAe3RhM2oNd3bds6b0UrGUmuYsv195aA/UaYDrsqcA8Hz96SULT0Rb2ETTTwALvuhLqE2m/C/R1m4bA77RfBXbvicSdfxGvKn553N2EaUcnWgdBqAV4ndmP23EOIyG8eEcMyGf/PV9dE++bjqV8P5dijGIROoIak2g4sqSVWUMWq6MHUQfKB7cPDixFQJBNYNX8/JK6L/uewFxCNKC+NCnQD7FWIEqXUZBu4DzxEHbJRLpAItuIGk+Hwfwt4NL7s9nazwemq9/pZbPKJZn3w6iZ0PmM4O3gCIhZFe55zpzI0+JRsnoS0UXgFOV8exek4tZHkrsae3+D7munstL2wag7OPm4qCEAFMTnKfXVINqWpvckDJ53bl49mj2lXwLkFnSUKYon/pwAj432ebHiavOIG3F8mZTcDlxvH5x9gn5+MJYK1]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9PLE
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9PZU 
+
+数据插入成功。
+抓取结果 [{'msgid': 'ANc8z2yMXs23XcxWueMJ5d4Mz6', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg', 'send_time': 1743828050, 'origin': 3, 'msgtype': 'text', 'text': {'content': 'Make'}}] 
+
+发送消息的客户信息: wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'ANc8z2yMXs23XcxWueMJ5d4Mz6'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:59004 - "POST /?msg_signature=60ca3730b932b494e178fac85b097d66f6720903&timestamp=1743828050&nonce=1744493527 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 Make what? 😊 You'll have to give me a bit more to go on! Are you thinking of making something specific? 🎨🍳✨
+发送消息的客户信息: wmSpxwCAAArOwtyX9Ol8TOCoulnJz_yg {'content': "Make what? 😊 You'll have to give me a bit more to go on! Are you thinking of making something specific? 🎨🍳✨"} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '52bf92f390f7ad811a635476c1d8c140'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[1uedW565UN8Uug72We4PXzrqC4sw+pJQLi5xFsMyG/2yKGjMkXZCqgrkg79zQnBbTkd3c+NAS++KQgia0ZrzDUUg14BDuR4SU2TGfWm1F672zkuszC22iFMyeCNNF/pUgve7ZwYASKKB7/FXoRM672d0PSIGSUMZut0sRyn73Ydm0/jt8LzTIsljEuyHZZyhGpmCJ5dx194v7WNJgG4OPhxfIbKcQRiQEC0bcVfyLWrfmU2naHPf6UBRo6qLWcALgbQn3b6sPFkdArCEiK/K6YzcRxhVPlfJHEltcmncFUqxUxt+UrVocaxm1KG0MXVfjoVXA7dlu6GKycQb5yx/0PiXydY0mhHYz3nrmEiavsI2CdoHHu5dz0tEJ68GiyZHDffFK9+m4j0xQ1RPpka0x1JRPzsC9SjJ9jjhYhrL9G1ZBO3+nxmZUF7vacLUZW3RoSUig5cT4fIYXPMc6VBZqga66kJ92vz+0jOH0vvJ95j9uXPIRQw3F4nj+fxo6OdY]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9PZU
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Pni 
+
+数据插入成功。
+抓取结果 [{'msgid': '4XXhA9SEJuBrWUFQy8oBYsZ3W9zhVMza1qnxntadiLYg', 'send_time': 1743859802, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ', 'welcome_code': 'khxltlcf73-iyixTmbm4alcke6ZO8s7vN1A8-tVh4CA'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:33858 - "POST /?msg_signature=2a4ccf1c9853ef62ce92e50c3dddb98675ed7c16&timestamp=1743859802&nonce=1744234214 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[y1ubdtiqq4vT4akAOKarp1/QAfaYXIgCBTfJ3euK8E69aQCBrpEbfFU0AbIyv1PmzF48hDt3j74OKSB5JOok3DVq7/zY9TOsM3SyxLq6UhYTXTINRTfPgKN227c2qb4VXmNl5c5PTVDcLQBzBnLbZk/JJfapdXfXSTHM60c3iSHVfc+Gded3LCOO4sZ0ixBGMGB8CqC+SZGLSil5D5Afv80R7YXVe0ERnVcfZDUyuigdjbCSypWxhn/xm0JcRda5H7kiFAnyqhE5hM/lbzmGbO5nwvLwXWuG7kVbLl6za9DchwWjqkflE6iUqwmeVAd9dOpvwaE4q0PKCp//BcnCShvy8lJNZwBYqMxGLT/MnwSYQV+PXr5WqbAQuRvGA0xoJdoV93flRvD1p9k4yQVBds5Vv1NmwzKlV5vWopEm3Lv8dSTjB4y0Cpq0hAcSCazD2EtweubaL+Wh8VpyMlYkNvWYpd3Gy4estjAp3LpFJh7wBN6qGRcu/4QTUQa0qdKr]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Pni
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Ps8 
+
+数据插入成功。
+抓取结果 [{'msgid': 'AZPgGFs9853X6C3pz7HsngFKQv', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ', 'send_time': 1743859815, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好，你是谁'}}] 
+
+发送消息的客户信息: wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'AZPgGFs9853X6C3pz7HsngFKQv'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:33876 - "POST /?msg_signature=15e9888ace6b6dab8920831363248fdf84bedf34&timestamp=1743859815&nonce=1743931442 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好呀！我是一个智能聊天机器人，可以陪你聊天、解答问题或者帮你找资料~ 你可以叫我小助手或者随便起个喜欢的名字 😊 今天有什么想聊的吗？
+发送消息的客户信息: wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ {'content': '你好呀！我是一个智能聊天机器人，可以陪你聊天、解答问题或者帮你找资料~ 你可以叫我小助手或者随便起个喜欢的名字 😊 今天有什么想聊的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '167751cd55b74c987ae17cca30b13487'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[UOP9llRyUDSS3V70aozNogn3ffMAQINc78/XX1pvKkdIAMP4xoeFgrJmTutu3krvwq2k4FC2moZV0sFAJKZaSKZ2HDu3yh/mLrFkPRup6v/fbce7s53Hpo7DNCOuPnZjYG+OdQYSixRPO81WA7vUImTGwuWCuXzaozSSOqGlduF4p7Cx0+GJVArt3GpHwt0xHj3ZgcSN1BOxBOvPPixmRKeeZRDorRSvZlI1ycNQmZQiMVQ/hHNNcjEymHtg6Idi0N6ljDjmnWJqzz1rfun3nLOFH6W9tifjd1tJZZsGKUbsbgZd7qnZjvFkqXLYPxHqF3Cc3OGtQ+Cq7T4XG09ozzQUQusDFM93y6OAieVeaMMBSdH1OTYSp3uD28E1BQfWECIA63csvfr7PhasRYhOlidLBiWP1h+rHmDQLI0nN354fiNUM1dAwVw/tEkdQo9Ngn8+7yxaKm0ftNPzNpu6UD8N7082VJ+cbvivhw3pKPVgNsHmEcfrUdX/VURhiyw6]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Ps8
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Q6N 
+
+数据插入成功。
+抓取结果 [{'msgid': '7p5QGZybC7GsdJiRbePaj7jSpEJPK7nmtTxEMiG6w6BF', 'send_time': 1743859995, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ', 'welcome_code': 'NEEZMrn8DRPaHq4X9gTtp2AS01uchjuQeX0U19xcsY0'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:34060 - "POST /?msg_signature=a571ca394ebc8d31d76a81d8bdcda6d8395f5bee&timestamp=1743859995&nonce=1744605428 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[WdZITciF0cxqcKWtbkY1Fux64zcP5kp7hv5nUsRLpA7YZm22/JNQeMDGahWEIueR6OPM+T2uEclFueJ7bpuF7ZF+j09sMs75md2+t1DMIFCjMtmxMH9XUn3HoZltRgpWNpgAFT7jelUBdBWs7cDoxEn5C8HwI6lYmNY86NikoSnOMnMawyHOs+S3ycUHdZFni3q0hyMPY7p9me7LQ38DfHoZhsP1aykd6j09z8rwo7ehzi3lUvKGhNgwTT9HJ6eCT8kPihly+cQPnXTPd8yZlpOnY8gzo5IFgXMHt0wQvqBHAqEiPUgaK9FUhGfUFavsdmtcTZTzQDdGsjcc1QmzBNDr7mioUwpWfBEuQfEn8EGHhdyKJQoQ94IxLqj3F2Afu644VepwijrKd1LdVDyIE2FrBnZRxbInWNYMu5sWC8hWiOQ2KofYOtlomJwPtYy2Na3yRx8s2KZrPgg9UaRycQetSfhJZN4R5220+ErVtL4x8aP1KGXmE5aKykBsQLxV]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Q6N
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9QAn 
+
+数据插入成功。
+抓取结果 [{'msgid': 'ABzMSRRUYjTMFDGzq3i7ddswA4', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ', 'send_time': 1743860039, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好，你是谁？'}}] 
+
+发送消息的客户信息: wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'ABzMSRRUYjTMFDGzq3i7ddswA4'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:34108 - "POST /?msg_signature=09b53acbcf7548617168fcc9319f9dca45a2f803&timestamp=1743860039&nonce=1744250875 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好呀！我是一个AI聊天助手，可以陪你聊天、解答问题或者帮你查资料~ 你可以叫我小助手或者随便取个喜欢的名字哦！😊 今天有什么想聊的吗？
+发送消息的客户信息: wmSpxwCAAARkacAVoNEMIrxk5QpGLJdQ {'content': '你好呀！我是一个AI聊天助手，可以陪你聊天、解答问题或者帮你查资料~ 你可以叫我小助手或者随便取个喜欢的名字哦！😊 今天有什么想聊的吗？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': '35a34552fc631df18f16b4e2a2026fa4'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[x8DGUAOVsijvnx0iixWML6mMdnZDYrSaZNFGJljNu6YGg9qMeFNCAAEefgpxh+Z5eegZoBF3PJuDGU6iFxP3j3rRHs3/15H/g4Mj+FMK4Ss1YujutgakEhi+JJk47ZUG34+S4KbE9CJJ9+164p30eKuGv7ZRBMqrdS/9N2mZzFp4FjgkDmaMHwvSrDqrZI6HDgNt+cXdheX2vQoq8X2se6vor0zf3AmLc9kt9da0ogpdtStcnWGyEGBC+sb3TcXdsTs0nvfiwbMp+dCWFiwk6TFE7fB3hBF7ZGjk2zXurOp2qaNStg7tjtB3T2YH1+uKZqPSbZOjNZqh8/QrNVPlFTqoMF22hvXrBtXDayR7M3t2YA97N3mjA3tC7pS4bmFQr0qm4Y/jECrM90PtwBAIyj0vZVuGRHCOJVjgDyNOPuMa0QfF0o9BQaODVJYdeS+s2qWlykZaVIZo32C8kikbooTHYGM0S8jfGUCMKDAF1qfdbZFdFvO5VnZ5nQgd6leu]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9QAn
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9QQ2 
+
+数据插入成功。
+抓取结果 [{'msgid': '7cNB6HqFkDuEiP9KTeNWbJfpesdFTsQFpbVQsRuJTgdY', 'send_time': 1743863353, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': '8XpFKenefZXl_uYMoUk4GKCQ1Vwo4sDNTfYnHtdQOow'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:37390 - "POST /?msg_signature=f74869a1cdc7f0b049e5ffa50ffd7a34fd690e52&timestamp=1743863353&nonce=1744070478 HTTP/1.0" 400 Bad Request
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[DKeRXo0TkL2Jh/Pbn+YFAtmYfZcEs46hCnQ5yJuIqZQ4NyTc9SrtLEetMsB3wNh4+kl066CXs0MAisgDlXdwecIBNbEiQW9RBKs833Fxu8MmafoO1AOgxEhdYkhuXeq/YUX5CImHvWSxv2LvBpTteNCEXLN6/GuKpKwyndhCl+JeLaGshxwI3JYwJ0BdZCSkZTeBgn0g3IPNZdSB9hxUKRf9wOiOurNx6aUSaT0d7/coTjP5KRilcomaMy54O0PMeqXciKNYFu4MFTQNMEEs0aSr0uBfoyXk6pZTyKNcEVPJfu1QIuTlwXXvWMn2yswYyl8nCgYF5aVtGS4z5taF5/BwoWLZYF5T/tq8ek2ORPe/YBWVXusPviGGOymzva5jWgGDwIBhO6+MwYZkEcGo3EdfnFQkEMZYsZrxwZUflVtyYP2EsMYxl1/pQvelKIvl94vX1boeuUnuPzFN6xO9IDuLuzYEpqec4Ii/ZOrKPN5CLRs/RLlWWBF9+jzQEiPr]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9QQ2
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9QUS 
+
+数据插入成功。
+抓取结果 [{'msgid': 'AvRMryvdVVNgUDEMyXMRFkiKyg', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'send_time': 1743863358, 'origin': 3, 'msgtype': 'text', 'text': {'content': '你好'}}] 
+
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '处理中...'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'AvRMryvdVVNgUDEMyXMRFkiKyg'}
+微信客服回复的信息: success
+wechat_callback->response: 0 success 
+
+INFO:     127.0.0.1:37406 - "POST /?msg_signature=9ccd07cad2021fa8044cf7b9fd9b755c7bfaf3f6&timestamp=1743863358&nonce=1744479909 HTTP/1.0" 200 OK
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+make传递的数据 你好呀！😊 很高兴和你聊天~ 有什么我可以帮你的吗？或者想聊聊什么有趣的话题呢？
+发送消息的客户信息: wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ {'content': '你好呀！😊 很高兴和你聊天~ 有什么我可以帮你的吗？或者想聊聊什么有趣的话题呢？'} 
+
+消息发送结果: {'errcode': 0, 'errmsg': 'ok', 'msgid': 'd3eaf6d6579a9fbc0e3797179e65580c'}
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[1AoqhdIto2qtitsZdB7vXROczYZO4X+2acjGmvTPySTq0qNp+aVem1DG6JckKCck0LANPvpFSxgUUOTDKza6YSjoayDc5lQ6UUMHOeaDsYTFTz1tGhGrGTel4lzZDxGSM0rZcJ0WpAwr/8KUsDst/pNkpWMg01xCFjVTxqD0UZRyBp45DOpcFIKbS/KFOf8Ifw5JK3J+ct7Dxcl79CGbme0nRDhH8GDZ8vMja4O3dUuiHuad9ARUaLyoSDT0AhZ797moZ7JUlJVISiR1I9mV6cFk+hpzKnbRHKq0pDVbRr0ojU9b24R+HacTAYjMOBMZSWf8Jf1pO2EDs+cHQWNvrXXdkdXliUZCqbbfQtzjhYqFJGuBwL8RzeJMDOG+4ugYRSZO8CHskPdkEdyQkkE0LYw3MfMZlObT8wZ5jIzmqRzOAGJTRefxrytitVDgDsMW2yiMAx2jV9j3dom66IAsGNbhv8BgH5Ow1bXMjziM/prrX3xloIHZkw3rPabzavHh]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9QUS
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Qhg 
+
+数据插入成功。
+抓取结果 [{'msgid': '4SpRp3r9iCofUHRTPwuesoqqVbV8yHzAyGWokh4K7whR', 'send_time': 1743912789, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAAzWDNHRZYhw2jgDTu9fGpYQ', 'welcome_code': 'hg2FXnBz_WiJsUkAfet4Qzr4qQDymHH5jOakO2qLdGg'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:57954 - "POST /?msg_signature=e899eb8d2ef7d4610239b7a3dbd379da57115ffe&timestamp=1743912789&nonce=1744419927 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[8KLtTGMYR0Yl6AnatErJm1Eyx1J/hAK/UkASkD9OxUlUtO+rzZGQnCgTzDZdKnqXBzANcMd3Q8vSXqlr+CdU/gR9aTZZ2dKzwe6dgV8nJXc5iQORd2W02H+JurVERYNMt1ie12aQhvfaHvA8R8G+mcIrkxDiHC693XsP6YZXkmmV0fV3B+nU2K8Pc3SD7VLOPqvLbPrpGBU6IebuEmKiYSnsQriBC28FE+FeuIroN00sM22yQCgSDv93J/Z0VyiNdcCCM69DgXCuDIyf6FogLYCOEx3anRsJAb9D7uJwICXhCK63fVhDsEcf1v4uXP8/Dii8VVsXC798pd+ouP2NjiaYtO9BeoXijTM52h6V2Lsgfn3vV0ZYoyZKI3+4HURka2FR5HXGnHPe0AVRN1WbWQvB7cxF6czXdOfICkhNemiN8+NHzLqlG9xvr47hwvZWZsJ72Hfb40/z1CpVfmBKPr045pB6eXbafBe9iQzaNd6N8uX9JmJGspugUVD2KDM8]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Qhg
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9Qn6 
+
+数据插入成功。
+抓取结果 [{'msgid': '4FsbGk8Dos3dpRokFRpjNh23YxioGKpK5Yqqp1r2HmVj', 'send_time': 1743969985, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAGE8XPHuimN5jQ8QlcXWlNg', 'external_userid': 'wmSpxwCAAApjpYyPe3Wz_TmlJQsJ9JSQ', 'welcome_code': 'Gy9YEMVG0PgncygwUBPGzHQUOQkQwna9tVEt_uX85kM'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:34278 - "POST /?msg_signature=14aafeea1c78fc6b0d998d9af3495e91c2ad293b&timestamp=1743969985&nonce=1744604111 HTTP/1.0" 400 Bad Request
+Process error: 'external_userid'
+Traceback (most recent call last):
+  File "/apps/robotWechat/api/utils.py", line 65, in process_request
+    reply_content = handler(parsed_msg)
+  File "/apps/robotWechat/api/utils.py", line 183, in _handle_event_msg
+    external_userid = msg_item['external_userid']
+KeyError: 'external_userid'
+响应体request_body: b'<xml><ToUserName><![CDATA[ww4ede9a36781c6e1c]]></ToUserName><Encrypt><![CDATA[ktps7zMvH+ADM/pI0YDXorlNq6soLX9BuQ2m9c4mBQp3QRies+ybvNPjLpOQuVRGvnDujI782zwGQETmC9nmQi4D0Tp9QCnYhWuITRHRZso/7JK+Q8G3VPjGAjPjpGKj4UWRauZFgxcSCePZLWFxpEwdk4LGeHjpXvvy5oH8aF1twEycTT4yWFkfy6lib3VnDR+ShbynJLFsqa4psvIxAXMvLm8Q7cCovk8pP03dNKmReQdGh03rMpXc2SodmSRyKFFZ2Rz6qG5dT2LmT0bwyFgsoxbyft1ibo95mMhrD9hCplLtGeT4JybcUlARLCkaOD74fG/gu1X6lpvg8iT3xR/O8U6iTCDec8mKVuxTp9w7Rtjut8uU8yPqyYkyl8YELk55+HgJc5Im5gBzB1A93iqZO+NMDwxcBQn9CBfEPsAB3wR0hF9IEQsgK4dwl6o0gInVBoTCi/WQjHFw+jgCjyl3KacflKaa3SZ8Iy+7PX7xhDs8FlcOpoWvtRvohqQu]]></Encrypt><AgentID><![CDATA[]]></AgentID></xml>' 
+
+处理器handler: <bound method WeChatMsgHandler._handle_event_msg of <api.utils.WeChatMsgHandler object at 0x7f26412c94a8>> 
+
+成功连接到数据库: wechat.db
+表 'cursors' 创建成功或已存在。
+使用的cursor: HHFq49uYHoiCuZRv9Qn6
+数据删除成功。
+即将插入的cursor为: HHFq49uYHoiCuZRv9QrW 
+
+数据插入成功。
+抓取结果 [{'msgid': '4eYYejFHDaQKTscYTxXH1F9sAG8opMaFeLZAS8ks42oU', 'send_time': 1744093282, 'origin': 4, 'msgtype': 'event', 'event': {'event_type': 'enter_session', 'scene': '', 'open_kfid': 'wkSpxwCAAAn73YbRu7XhjJYrwNi2Ag_Q', 'external_userid': 'wmSpxwCAAAE0Xo1fa8pyv5LW_xyXkFgw', 'welcome_code': 'N-1z1UnDFfh3x9o852cR-mWj9lDWryb9WNcwRd-1uD8'}}] 
+
+wechat_callback->response: -1 Server error: 'external_userid' 
+
+INFO:     127.0.0.1:49534 - "POST /?msg_signature=b0b2190cbad80b771a559afd0ddc322363532fa6&timestamp=1744093282&nonce=1744370410 HTTP/1.0" 400 Bad Request
+INFO:     127.0.0.1:58924 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:58926 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:35406 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:35412 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:41224 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:41230 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:38024 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:38026 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     None:0 - "GET / HTTP/1.0" 422 Unprocessable Entity
+INFO:     Stopping reloader process [1717]
